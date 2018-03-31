@@ -1,0 +1,20 @@
+branches:
+  only:
+  - master
+language: python
+python:
+- 2.7
+install:
+- pip install pelican
+script:
+- make html
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  
+  keep-history: true
+  target-branch: gh-pages
+  name: "Travis CI"
+  local-dir: ./output
+  on:
+    branch: master
