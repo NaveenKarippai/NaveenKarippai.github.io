@@ -5,3 +5,4 @@ first_post
 :category: Test
 
 Hello World from Pelican!
+Test
