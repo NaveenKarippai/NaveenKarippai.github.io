@@ -8,7 +8,11 @@ python:
 - 2.7
 install:
 - pip install pelican
+- pip install pylint
+- pip install restructuredtext_lint
 script:
+- pylint --errors-only *.py
+- rst-lint content/*.rst
 - make html
 deploy:
   provider: pages
