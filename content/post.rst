@@ -5,3 +5,8 @@ first_post
 
 Hello World from Pelican!
 Test
+
+.. image:: https://i.imgur.com/3uaUoF1.jpg
+   :width: 400pt
+.. image:: https://i.imgur.com/3uaUoF1.jpg
+   :width: 400pt
