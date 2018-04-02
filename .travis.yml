@@ -3,6 +3,8 @@ branches:
   - develop
   except:
   - master
+git:
+  depth: 1
 language: python
 python:
 - 2.7
