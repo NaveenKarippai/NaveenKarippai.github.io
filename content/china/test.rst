@@ -3,7 +3,6 @@ mypost
 
 :date: 2018-3-30 21:41
 :tags:
-:category: one
 :slug: mypost
 :summary:
 

@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Maru'
-SITENAME = "Maru's Travel Blog"
+SITENAME = "Maru's Blog"
 SITEURL = ''
 
 PATH = 'content'
@@ -35,3 +35,24 @@ DEFAULT_PAGINATION = 5
 #RELATIVE_URLS = True
 
 THEME = "./theme/waterspill"
+
+# organize your articles in subfolders
+USE_FOLDER_AS_CATEGORY = True
+DEFAULT_CATEGORY = 'Earth'
+
+TYPOGRIFY = True
+SUMMARY_MAX_LENGTH = 50
+NEWEST_FIRST_ARCHIVES = True
+
+
+LOAD_CONTENT_CACHE = False
+PLUGIN_PATHS = ['../pelican-plugins/']
+PLUGINS = ['i18n_subsites']
+
+# mapping: language_code -> settings_overrides_dict
+I18N_SUBSITES = {
+    'cz': {
+        'SITENAME': 'Hezkej blog',
+	 'THEME' : "./theme/waterspill"
+        }
+    }
