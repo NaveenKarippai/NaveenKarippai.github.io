@@ -14,13 +14,13 @@ install:
 - pip install typogrify
 script:
 - pylint --errors-only *.py
-- hint content/*.md
-- rst-lint content/*.rst
+- hint content/*/*.md
+- rst-lint content/*/*.rst
 - make html
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN  
+  github-token: $GITHUB_TOKEN
   keep-history: true
   target-branch: master
   name: "Travis CI"
