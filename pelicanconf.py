@@ -34,7 +34,7 @@ DEFAULT_PAGINATION = 5
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = "./theme/waterspill"
+THEME = "./theme/waterspill-en"
 
 # organize your articles in subfolders
 USE_FOLDER_AS_CATEGORY = True
