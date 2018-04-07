@@ -1,6 +1,6 @@
-[submodule "theme"]
-	path = theme
-	url = https://github.com/NaveenKarippai/minimalX
 [submodule "plugins"]
 	path = plugins
 	url = https://github.com/NaveenKarippai/pelican-plugins
+[submodule "theme"]
+	path = theme
+	url = https://github.com/NaveenKarippai/minimalX
