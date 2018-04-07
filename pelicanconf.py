@@ -56,3 +56,12 @@ I18N_SUBSITES = {
 	 'THEME' : "./theme/waterspill"
         }
     }
+
+STATIC_PATHS = [
+    'extra/robots.txt',
+    'extra/favicon.ico'
+]
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+}
