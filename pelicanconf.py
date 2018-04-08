@@ -39,11 +39,11 @@ STATIC_PATHS = [
     'extra/robots.txt',
     'extra/favicon.ico'
 ]
+
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'}
 }
-
 
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = True
@@ -55,14 +55,13 @@ SOCIAL = (('twitter', 'https://twitter.com/yourprofile'),
 
 SHARE_BUTTONS = ('twitter', 'facebook', 'whatsapp', 'mail')
  
+# Plugins
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ["tag_cloud"]
+
 # TAG_CLOUD plugin
 TAG_CLOUD = True
 TAG_CLOUD_STEPS = 5
 TAG_CLOUD_MAX_ITEMS = 50
 TAG_CLOUD_BADGE = True
 TAG_CLOUD_SORTING = 'size'
-
-# Plugins
-PLUGIN_PATHS = ['./plugins']
-PLUGINS = ["tag_cloud"]
-
