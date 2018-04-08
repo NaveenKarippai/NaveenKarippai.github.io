@@ -5,7 +5,15 @@ md1=`ls -l content/*.md 2>/dev/null | wc -l`
 rst2=`ls -l content/*/*.rst 2>/dev/null | wc -l`
 rst1=`ls -l content/*.rst 2>/dev/null | wc -l`
 
-[ $md2 != 0 ] && hint content/*/*.md
-[ $md1 != 0 ] && hint content/*.md
-[ $rst1 != 0 ] && rst-lint content/*.rst
-[ $rst2 != 0 ] && rst-lint content/*/*.rst
+if [ $md2 -ne 0 ]; then
+	 hint content/*/*.md
+fi
+if [ $rst1 -ne 0 ]; then
+ 	rst-lint content/*.rst
+fi
+if [ $rst2 -ne 0 ]; then
+ 	rst-lint content/*/*.rst
+fi
+if [ $md1 -ne 0 ]; then
+	hint content/*.md
+fi
