@@ -29,7 +29,7 @@ THEME = "theme"
 # organize your articles in subfolders
 DEFAULT_CATEGORY = 'General'
 
-TYPOGRIFY = True
+# TYPOGRIFY = True
 SUMMARY_MAX_LENGTH = 50
 NEWEST_FIRST_ARCHIVES = True
 

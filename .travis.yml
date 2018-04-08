@@ -7,13 +7,12 @@ git:
   depth: 1
 language: python
 python:
-- 2.7
+- 3.6.4
 install:
 - pip install pelican
 - pip install pylint
 - pip install restructuredtext_lint
 - pip install hint
-- pip install typogrify
 script:
 - pylint --errors-only *.py
 - hint content/*/*.md
