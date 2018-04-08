@@ -14,6 +14,8 @@ install:
 - pip install pylint
 - pip install restructuredtext_lint
 - pip install hint
+before_script:
+- chmod ugo+x lint.sh
 script:
 - pylint --errors-only *.py
 - bash lint.sh
