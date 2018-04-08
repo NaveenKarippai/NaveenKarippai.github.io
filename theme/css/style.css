@@ -1,5 +1,9 @@
 /* Global */
 
+#tagcloud {
+  height: 350px!important;
+}
+
 body {
   margin: 0px;
   padding: 0px;

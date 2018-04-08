@@ -87,8 +87,29 @@
       </article>
 
       <br><br><br>
-
-      <article class="w3-container w3-card-2 w3-white col-main">
+	<!-- Show Tagcloud -->
+<br>
+<div id="tagcloud" class="jqcloud w3-card w3-margin-top w3-margin-bottom w3-light-grey w3-center">
+  <script>
+  var tags = [
+    {text: "#helo", weight: 1, link: 'http://localhost:8000/tag/helo.html', html: {title: "Alle Posts zum Thema helo"}},
+    {text: "#world", weight: 1, link: 'http://localhost:8000/tag/world.html', html: {title: "Alle Posts zum Thema world"}},
+    {text: "#fun", weight: 1, link: 'http://localhost:8000/tag/fun.html', html: {title: "Alle Posts zum Thema fun"}},
+    {text: "#pelican", weight: 1, link: 'http://localhost:8000/tag/pelican.html', html: {title: "Alle Posts zum Thema pelican"}},
+    {text: "#plugins", weight: 1, link: 'http://localhost:8000/tag/plugins.html', html: {title: "Alle Posts zum Thema plugins"}},
+    /* ... */
+  ];
+  $('#tagcloud').jQCloud(tags, {
+    height: 400,
+    autoResize: true,
+    shape: 'rectangular',
+    center: {x: 0.4, y: 0.5},
+    steps: 5
+  });
+  </script>
+</div>
+<br>
+<br>      <article class="w3-container w3-card-2 w3-white col-main">
         <header>
           <h2><a href="http://localhost:8000/first_post.html">first_post</a></h2>
           <div class="post-info">
@@ -96,10 +117,10 @@
               <span><time datetime="2014-12-13T18:32:00+01:00">Sat 13 December 2014</time> in <a href="http://localhost:8000/category/china.html" title="All articles in category china">china</a></span>
             </div>
             <div class="w3-margin-right">
-              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
                 <a href="http://localhost:8000/tag/helo.html" title="All articles with Helo tag">#helo</a>
               </span>
-              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
                 <a href="http://localhost:8000/tag/world.html" title="All articles with World tag">#world</a>
               </span>
             </div>
@@ -116,22 +137,27 @@
       </article>
 
       <br><br><br>
+	<!-- Show Tagcloud -->
+	<!-- Whitespace between Articles -->
 
       <article class="w3-container w3-card-2 w3-white col-main">
         <header>
+          <div class="headerimage-card">
+            <a href="http://localhost:8000/article3.html"><img src="https://i.imgur.com/3uaUoF1.jpg" style="width: 100%;"></img></a>
+          </div>
           <h2><a href="http://localhost:8000/article3.html">Article3</a></h2>
           <div class="post-info">
             <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
               <span><time datetime="2010-12-03T10:20:00+01:00">Fri 03 December 2010</time> in <a href="http://localhost:8000/category/china.html" title="All articles in category china">china</a></span>
             </div>
             <div class="w3-margin-right">
-              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
                 <a href="http://localhost:8000/tag/fun.html" title="All articles with Fun tag">#fun</a>
               </span>
-              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
                 <a href="http://localhost:8000/tag/pelican.html" title="All articles with Pelican tag">#pelican</a>
               </span>
-              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
                 <a href="http://localhost:8000/tag/plugins.html" title="All articles with Plugins tag">#plugins</a>
               </span>
             </div>
@@ -139,7 +165,7 @@
         </header>
 
         <div class="entry-content">
-          Following is a review of my favorite mechanical keyboard. content3, yeah!
+          Reference: http://fabianbloggt.de/minimalx-article-format.html image specs: PNG image data, 1300 x 600, 8-bit/color RGBA, non-interlaced Following is a review of my favorite mechanical keyboard. content3, yeah! „Lorem ipsum dolor sit amet“ This is an example caption
         </div>
 
         <footer>
@@ -148,6 +174,8 @@
       </article>
 
       <br><br><br>
+	<!-- Show Tagcloud -->
+	<!-- Whitespace between Articles -->
 
 
 
