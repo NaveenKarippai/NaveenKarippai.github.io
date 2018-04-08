@@ -22,6 +22,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 DEFAULT_PAGINATION = 5
+USE_FOLDER_AS_CATEGORY = False
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -29,7 +30,7 @@ DEFAULT_PAGINATION = 5
 THEME = "theme"
 
 # organize your articles in subfolders
-DEFAULT_CATEGORY = 'General'
+DEFAULT_CATEGORY = 'Travel'
 
 # TYPOGRIFY = True
 SUMMARY_MAX_LENGTH = 50
@@ -47,13 +48,12 @@ EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'}
 }
 
-DISPLAY_PAGES_ON_MENU = False
-DISPLAY_CATEGORIES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/yourprofile'),
-         ('instagram', 'https://instagram.com/yourprofile'),
-         ('github', 'https://github.com/yourprofile'))
+         ('instagram', 'https://instagram.com/yourprofile'))
 
 SHARE_BUTTONS = ('twitter', 'facebook', 'whatsapp', 'mail')
  
