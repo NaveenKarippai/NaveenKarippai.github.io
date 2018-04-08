@@ -77,7 +77,7 @@ MENUITEMS = (
 # Author
 AUTHOR_INTRO = 'Hello world! I’m Maru.'
 AUTHOR_DESCRIPTION = 'Hello world! I’m Maru. I like coffee, birds and Python.'
-AUTHOR_AVATAR = 'http://www.gravatar.com/avatar/abcdefghijkl?s=240'
+AUTHOR_AVATAR = 'https://www.gravatar.com/avatar/abcdefghijkl?s=240'
 
 # Theme customizations
 MINIMALXY_START_YEAR = 2018
