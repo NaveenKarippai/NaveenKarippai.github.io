@@ -2,6 +2,7 @@ first_post
 ##########
 
 :date: 2014-12-13 18:32
+:tags: helo, world
 
 Hello World from Pelican!
 
