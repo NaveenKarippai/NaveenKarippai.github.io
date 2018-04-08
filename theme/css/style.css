@@ -138,8 +138,8 @@ ul.social li a:hover {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  color: white;
+  background-color: #75756a;
+  color: #d9ff3f;
   font-size: 20pt;
   font-weight: bold;
 }
