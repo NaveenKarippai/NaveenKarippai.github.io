@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 import datetime
 
 AUTHOR = 'NaveenKarippai'
 SITENAME = "Maru's Blog"
-SITEURL = 'http://localhost:8000'
+SITEURL = os.environ['SITEURL']
 
 PATH = 'content'
 
