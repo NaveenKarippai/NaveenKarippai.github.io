@@ -70,8 +70,8 @@ TAG_CLOUD_SORTING = 'size'
 
 # Menu
 MENUITEMS = (
-    ('Categories', '/' + 'CATEGORIES_SAVE_AS'),
-    ('Archive', '/' + 'ARCHIVES_SAVE_AS'),
+    ('Categories', '/' + 'categories.html'),
+    ('Archive', '/' + 'archives.html'),
 )
 
 # Author

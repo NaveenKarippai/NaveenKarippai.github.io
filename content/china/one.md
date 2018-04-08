@@ -3,6 +3,7 @@ Tags: fun, pelican, plugins
 Date: 2010-12-03 10:20
 HeaderImage: https://i.imgur.com/3uaUoF1.jpg
 HeaderImageCaption: You can insert a caption to the header image by using the metadata element HeaderImageCaption
+author: Test user
 
 Reference: http://fabianbloggt.de/minimalx-article-format.html
 image specs: PNG image data, 1300 x 600, 8-bit/color RGBA, non-interlaced
