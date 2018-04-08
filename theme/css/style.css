@@ -262,6 +262,9 @@ ul.social li a:hover {
   display: block;
   margin: 3rem auto 3rem auto;
 }
+#content p > img:hover {
+  border:2px solid black!important
+}
 
 #content p.content-highlight {
   color: #4CAF50;
