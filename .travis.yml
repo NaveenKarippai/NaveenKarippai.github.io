@@ -18,7 +18,7 @@ before_script:
 - chmod ugo+x lint.sh
 script:
 - pylint --errors-only *.py
-- bash lint.sh
+- ./lint.sh
 - make html
 deploy:
   provider: pages
