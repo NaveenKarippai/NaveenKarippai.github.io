@@ -16,10 +16,7 @@ install:
 - pip install hint
 script:
 - pylint --errors-only *.py
-- [ -f content/*/*md ] && hint content/*/*.md
-- [ -f content/*/*rst ] && rst-lint content/*/*.rst
-- [ -f content/*md ] && hint content/*.md
-- [ -f content/*rst ] && rst-lint content/*.rst
+- hint content/*/*.md
 - make html
 deploy:
   provider: pages
