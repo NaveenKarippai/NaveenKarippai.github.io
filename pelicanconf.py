@@ -52,14 +52,13 @@ DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 
 # Social widget
-SOCIAL = (('twitter', 'https://twitter.com/yourprofile'),
-         ('instagram', 'https://instagram.com/yourprofile'))
+SOCIAL = (('github', 'https://github.com/NaveenKarippai'),)
 
 SHARE_BUTTONS = ('twitter', 'facebook', 'whatsapp', 'mail')
  
 # Plugins
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ["tag_cloud"]
+PLUGINS = ["tag_cloud", "sitemap"]
 
 # TAG_CLOUD plugin
 TAG_CLOUD = True
@@ -67,6 +66,21 @@ TAG_CLOUD_STEPS = 5
 TAG_CLOUD_MAX_ITEMS = 50
 TAG_CLOUD_BADGE = True
 TAG_CLOUD_SORTING = 'size'
+
+# SITEMAP plugin
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
 
 # Menu
 MENUITEMS = (
