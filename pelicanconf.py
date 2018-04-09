@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 import os
 import datetime
 
-AUTHOR = 'NaveenKarippai'
+AUTHOR = 'Naveen Karippai'
 SITENAME = "Maru's Blog"
 SITEURL = os.environ['SITEURL']
 
