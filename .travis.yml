@@ -11,6 +11,7 @@ python:
 install:
 - pip install pelican
 - pip install markdown
+- pip install disqus-python
 - pip install pylint
 - pip install restructuredtext_lint
 - pip install hint

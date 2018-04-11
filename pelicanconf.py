@@ -58,7 +58,7 @@ SHARE_BUTTONS = ('twitter', 'facebook', 'whatsapp', 'mail')
  
 # Plugins
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ["tag_cloud", "sitemap"]
+PLUGINS = ["tag_cloud", "sitemap", "disqus_static"]
 
 # TAG_CLOUD plugin
 TAG_CLOUD = True
@@ -81,6 +81,11 @@ SITEMAP = {
         'pages': 'monthly'
     }
 }
+
+# Disqus plugin
+DISQUS_SITENAME = 'naveenkarippai.github.io'
+DISQUS_SECRET_KEY = os.environ["DISQUS_SECRET_KEY"]
+DISQUS_PUBLIC_KEY = os.environ["DISQUS_PUBLIC_KEY"]
 
 # Menu
 MENUITEMS = (
