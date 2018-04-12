@@ -7,7 +7,7 @@ git:
   depth: 1
 language: python
 python:
-- 3.6.4
+- 2.7.14
 install:
 - pip install pelican
 - pip install markdown
