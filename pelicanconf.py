@@ -83,7 +83,7 @@ SITEMAP = {
 }
 
 # Disqus plugin
-DISQUS_SITENAME = 'TheDreamer'
+DISQUS_SITENAME = 'blog'
 DISQUS_SECRET_KEY = os.environ["DISQUS_SECRET_KEY"]
 DISQUS_PUBLIC_KEY = os.environ["DISQUS_PUBLIC_KEY"]
 
