@@ -5,8 +5,15 @@ import os
 import datetime
 
 AUTHOR = 'Naveen Karippai'
-SITENAME = "Maru's Blog"
-SITEURL = os.environ['SITEURL']
+SITENAME = "Yellow Elephant"
+
+# CI server should set SITEURL env var to point to the Domain name
+# local dev env should point to localhost
+if "SITEURL" in os.environ:
+    SITEURL = os.environ['SITEURL']
+else:
+    SITEURL = "http://localhost:8000"
+
 
 PATH = 'content'
 
