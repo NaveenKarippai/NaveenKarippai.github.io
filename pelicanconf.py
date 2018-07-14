@@ -58,7 +58,8 @@ SHARE_BUTTONS = ('twitter', 'facebook', 'whatsapp', 'mail')
  
 # Plugins
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ["tag_cloud", "sitemap", "disqus_static"]
+#PLUGINS = ["tag_cloud", "sitemap", "disqus_static"]
+PLUGINS = ["tag_cloud", "sitemap"]
 
 # TAG_CLOUD plugin
 TAG_CLOUD = True
@@ -83,9 +84,9 @@ SITEMAP = {
 }
 
 # Disqus plugin
-DISQUS_SITENAME = 'blog'
-DISQUS_SECRET_KEY = os.environ["DISQUS_SECRET_KEY"]
-DISQUS_PUBLIC_KEY = os.environ["DISQUS_PUBLIC_KEY"]
+#DISQUS_SITENAME = 'blog'
+#DISQUS_SECRET_KEY = os.environ["DISQUS_SECRET_KEY"]
+#DISQUS_PUBLIC_KEY = os.environ["DISQUS_PUBLIC_KEY"]
 
 # Menu
 MENUITEMS = (
