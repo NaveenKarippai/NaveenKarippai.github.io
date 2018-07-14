@@ -4,8 +4,9 @@ from __future__ import unicode_literals
 import os
 import datetime
 
-AUTHOR = 'Naveen Karippai'
+AUTHOR = "Naveen Karippai"
 SITENAME = "Yellow Elephant"
+SITETITLE = "Yellow Elephant in a Green Forest"
 
 # CI server should set SITEURL env var to point to the Domain name
 # local dev env should point to localhost
@@ -28,7 +29,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 4
 USE_FOLDER_AS_CATEGORY = False
 
 # Uncomment following line if you want document-relative URLs when developing
@@ -71,7 +72,7 @@ PLUGINS = ["tag_cloud", "sitemap"]
 # TAG_CLOUD plugin
 TAG_CLOUD = True
 TAG_CLOUD_STEPS = 5
-TAG_CLOUD_MAX_ITEMS = 50
+TAG_CLOUD_MAX_ITEMS = 40
 TAG_CLOUD_BADGE = True
 TAG_CLOUD_SORTING = 'size'
 
