@@ -4,154 +4,154 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>yellowelephant.xyz/</loc>
-<lastmod>2018-07-15T14:52:45-00:00</lastmod>
+<loc>https://yellowelephant.xyz/</loc>
+<lastmod>2018-07-15T14:55:49-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/archives.html</loc>
-<lastmod>2018-07-15T14:52:45-00:00</lastmod>
+<loc>https://yellowelephant.xyz/archives.html</loc>
+<lastmod>2018-07-15T14:55:49-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/tags.html</loc>
-<lastmod>2018-07-15T14:52:45-00:00</lastmod>
+<loc>https://yellowelephant.xyz/tags.html</loc>
+<lastmod>2018-07-15T14:55:49-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/categories.html</loc>
-<lastmod>2018-07-15T14:52:45-00:00</lastmod>
+<loc>https://yellowelephant.xyz/categories.html</loc>
+<lastmod>2018-07-15T14:55:49-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/scoping-and-hoisting-in-javascript.html</loc>
+<loc>https://yellowelephant.xyz/scoping-and-hoisting-in-javascript.html</loc>
 <lastmod>2016-11-05T10:20:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/my-super-post2.html</loc>
+<loc>https://yellowelephant.xyz/my-super-post2.html</loc>
 <lastmod>2013-12-01T10:21:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/my-super-post.html</loc>
+<loc>https://yellowelephant.xyz/my-super-post.html</loc>
 <lastmod>2011-12-01T10:21:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/article3.html</loc>
+<loc>https://yellowelephant.xyz/article3.html</loc>
 <lastmod>2010-12-03T10:20:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/category/moon.html</loc>
+<loc>https://yellowelephant.xyz/category/moon.html</loc>
 <lastmod>2011-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/category/software.html</loc>
+<loc>https://yellowelephant.xyz/category/software.html</loc>
 <lastmod>2016-11-05T10:20:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/category/sun.html</loc>
+<loc>https://yellowelephant.xyz/category/sun.html</loc>
 <lastmod>2013-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/category/travel.html</loc>
+<loc>https://yellowelephant.xyz/category/travel.html</loc>
 <lastmod>2010-12-03T10:20:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/tag/pelican.html</loc>
+<loc>https://yellowelephant.xyz/tag/pelican.html</loc>
 <lastmod>2010-12-03T10:20:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/tag/javascript.html</loc>
+<loc>https://yellowelephant.xyz/tag/javascript.html</loc>
 <lastmod>2016-11-05T10:20:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/tag/three.html</loc>
+<loc>https://yellowelephant.xyz/tag/three.html</loc>
 <lastmod>2013-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/tag/test.html</loc>
+<loc>https://yellowelephant.xyz/tag/test.html</loc>
 <lastmod>2011-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/tag/plugins.html</loc>
+<loc>https://yellowelephant.xyz/tag/plugins.html</loc>
 <lastmod>2013-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/tag/fun.html</loc>
+<loc>https://yellowelephant.xyz/tag/fun.html</loc>
 <lastmod>2013-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/author/flower.html</loc>
+<loc>https://yellowelephant.xyz/author/flower.html</loc>
 <lastmod>2013-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/author/mari.html</loc>
+<loc>https://yellowelephant.xyz/author/mari.html</loc>
 <lastmod>2011-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/author/naveen-karippai.html</loc>
+<loc>https://yellowelephant.xyz/author/naveen-karippai.html</loc>
 <lastmod>2016-11-05T10:20:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>yellowelephant.xyz/author/test-user.html</loc>
+<loc>https://yellowelephant.xyz/author/test-user.html</loc>
 <lastmod>2010-12-03T10:20:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
