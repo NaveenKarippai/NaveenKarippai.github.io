@@ -4,154 +4,154 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>naveenkarippai.github.io/</loc>
-<lastmod>2018-07-15T14:18:07-00:00</lastmod>
+<loc>http://localhost:8000/</loc>
+<lastmod>2018-07-15T14:47:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/archives.html</loc>
-<lastmod>2018-07-15T14:18:07-00:00</lastmod>
+<loc>http://localhost:8000/archives.html</loc>
+<lastmod>2018-07-15T14:47:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/tags.html</loc>
-<lastmod>2018-07-15T14:18:07-00:00</lastmod>
+<loc>http://localhost:8000/tags.html</loc>
+<lastmod>2018-07-15T14:47:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/categories.html</loc>
-<lastmod>2018-07-15T14:18:07-00:00</lastmod>
+<loc>http://localhost:8000/categories.html</loc>
+<lastmod>2018-07-15T14:47:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/scoping-and-hoisting-in-javascript.html</loc>
+<loc>http://localhost:8000/scoping-and-hoisting-in-javascript.html</loc>
 <lastmod>2016-11-05T10:20:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/my-super-post2.html</loc>
+<loc>http://localhost:8000/my-super-post2.html</loc>
 <lastmod>2013-12-01T10:21:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/my-super-post.html</loc>
+<loc>http://localhost:8000/my-super-post.html</loc>
 <lastmod>2011-12-01T10:21:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/article3.html</loc>
+<loc>http://localhost:8000/article3.html</loc>
 <lastmod>2010-12-03T10:20:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/category/moon.html</loc>
+<loc>http://localhost:8000/category/moon.html</loc>
 <lastmod>2011-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/category/software.html</loc>
+<loc>http://localhost:8000/category/software.html</loc>
 <lastmod>2016-11-05T10:20:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/category/sun.html</loc>
+<loc>http://localhost:8000/category/sun.html</loc>
 <lastmod>2013-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/category/travel.html</loc>
+<loc>http://localhost:8000/category/travel.html</loc>
 <lastmod>2010-12-03T10:20:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/tag/pelican.html</loc>
+<loc>http://localhost:8000/tag/pelican.html</loc>
 <lastmod>2010-12-03T10:20:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/tag/javascript.html</loc>
+<loc>http://localhost:8000/tag/javascript.html</loc>
 <lastmod>2016-11-05T10:20:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/tag/three.html</loc>
+<loc>http://localhost:8000/tag/three.html</loc>
 <lastmod>2013-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/tag/test.html</loc>
+<loc>http://localhost:8000/tag/test.html</loc>
 <lastmod>2011-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/tag/plugins.html</loc>
+<loc>http://localhost:8000/tag/plugins.html</loc>
 <lastmod>2013-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/tag/fun.html</loc>
+<loc>http://localhost:8000/tag/fun.html</loc>
 <lastmod>2013-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/author/flower.html</loc>
+<loc>http://localhost:8000/author/flower.html</loc>
 <lastmod>2013-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/author/mari.html</loc>
+<loc>http://localhost:8000/author/mari.html</loc>
 <lastmod>2011-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/author/naveen-karippai.html</loc>
+<loc>http://localhost:8000/author/naveen-karippai.html</loc>
 <lastmod>2016-11-05T10:20:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>naveenkarippai.github.io/author/test-user.html</loc>
+<loc>http://localhost:8000/author/test-user.html</loc>
 <lastmod>2010-12-03T10:20:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
