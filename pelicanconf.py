@@ -48,12 +48,14 @@ LOAD_CONTENT_CACHE = False
 
 STATIC_PATHS = [
     'extra/robots.txt',
-    'extra/favicon.ico'
+    'extra/favicon.ico',
+    'extra/CNAME'
 ]
 
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
-    'extra/favicon.ico': {'path': 'favicon.ico'}
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/CNAME': {'path': 'CNAME'}
 }
 
 DISPLAY_PAGES_ON_MENU = True
