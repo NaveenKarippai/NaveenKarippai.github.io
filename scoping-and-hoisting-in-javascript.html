@@ -17,13 +17,13 @@
 
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Scoping and Hoisting in JavaScript"/>
-    <meta property="og:description" content="Scope can be defined as the context in which a variable exists. Scope can be local, or global in JavaScript. Do you know the value logged on JavaScript console when the following code snippet is run? The answer here is &#34;The Flash&#34;. This happens due to Function-level scoping in JavaScript …"/>
+    <meta property="og:description" content="Learn how variable scoping and hoisting works in JS!"/>
     <meta property="og:site_name" content="Yellow Elephant" />
     <meta property="og:url" content="https://yellowelephant.xyz/scoping-and-hoisting-in-javascript.html"/>
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Scoping and Hoisting in JavaScript">
-    <meta name="twitter:description" content="Scope can be defined as the context in which a variable exists. Scope can be local, or global in JavaScript. Do you know the value logged on JavaScript console when the following code snippet is run? The answer here is &#34;The Flash&#34;. This happens due to Function-level scoping in JavaScript …">
+    <meta name="twitter:description" content="Learn how variable scoping and hoisting works in JS!">
     <meta name="twitter:url" content="https://yellowelephant.xyz/scoping-and-hoisting-in-javascript.html">
 
     <!-- Feed -->
@@ -46,7 +46,7 @@
   <body>
     <div class="w3-row w3-card w3-white">
       <header id="header">
-        <a href="https://yellowelephant.xyz" id="header-logo" title="Home">M</a>
+        <a href="https://yellowelephant.xyz" id="header-logo" title="Home">YE</a>
         <nav id="header-menu">
           <ul>
             <li class="w3-bottombar w3-border-white w3-hover-border-blue"><a href="/categories.html">Categories</a></li>
@@ -71,6 +71,12 @@
             <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
               <a href="https://yellowelephant.xyz/tag/javascript.html" title="All articles with Javascript tag">#javascript</a>
             </span>
+            <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+              <a href="https://yellowelephant.xyz/tag/web-development.html" title="All articles with Web-Development tag">#web-development</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+              <a href="https://yellowelephant.xyz/tag/software.html" title="All articles with Software tag">#software</a>
+            </span>
           </div>
         </div>
       </header>
@@ -79,24 +85,53 @@
 
       <div class="headerimage-article">
         <img src="https://i.imgur.com/lCZe9cs.jpg" style="width: 100%;">
-          <p class="caption">src: https://pixabay.com/en/code-jquery-web-design-583073/</p>
+          <p class="caption">src: pixabay.com</p>
       </div>
 
       <div class="col-main w3-container">
         <section id="content">
           <p>Scope can be defined as the context in which a variable exists. Scope can be local, or global in JavaScript.</p>
 <p>Do you know the value logged on JavaScript console when the following code snippet is run?</p>
-<p class="highlight">The answer here is "The Flash". This happens due to Function-level scoping in JavaScript on variable declaration (using var keyword). The developers from Java background may find this surprising!</p>
-<script src="https://gist.github.com/NaveenKarippai/3d0f78755935db0ec9db496178785e29.js"></script>
+<script src="https://gist.github.com/NaveenKarippai/743c9395a1159c86a1244785595c99aa.js"></script>
 
-<div class="videoWrapper adjust-width">
-<!-- Embed code from YouTube -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/d5ZOpQ5o2Ns" frameborder="0" allowfullscreen></iframe>
-</div>
+<p>The answer here is "The Flash". This happens due to Function-level scoping in JavaScript on variable declaration (using var keyword). The developers from Java background may find this surprising!</p>
+<h3>Function-level Scope</h3>
+<p>In JavaScript, variables declared (using var keyword) are function-level scoped. The block-level scoping with loops and conditionals ( if,for, while, switch blocks) don't delimit the scope.</p>
+<script src="https://gist.github.com/NaveenKarippai/b2bea061ef940a6cceb0ee0f7ebbded3.js"></script>
 
-<p class="content-highlight">„Lorem ipsum dolor sit amet“</p>
-<p class="adjust-width"><img alt="Example image with a butterfly" src="https://i.imgur.com/3uaUoF1.jpg"></p>
-<p class="caption">This is an example caption</p>
+<h3>Hoisting</h3>
+<p>In JavaScript, hoisting is a powerful and an expressive feature by which, JavaScript interpreter moves the function and variable declarations to the top of the current referenced scope. The variable declarations and function declarations are hoisted in JavaScript!</p>
+<script src="https://gist.github.com/NaveenKarippai/c7e62578e89f12c80113d6496feecb8e.js"></script>
+
+<p>The function body is hoisted along with function declaration. In the code snippet, the function declaration is moved to the top of scope through hoisting (above return statement). The equivalent code interpreted would be:</p>
+<script src="https://gist.github.com/NaveenKarippai/74d511727c4b9dce4988b4000fff019c.js"></script>
+
+<h3>An aside:</h3>
+<p>The assignment part of variable and function expressions are not hoisted, but only the declarations are!</p>
+<script src="https://gist.github.com/NaveenKarippai/6103185310c90f12fd0cb04078a35028.js"></script>
+
+<p>The equivalent code interpreted would be:</p>
+<script src="https://gist.github.com/NaveenKarippai/ab23d059525b4575ef2ab67e118d2a8b.js"></script>
+
+<h3>What's new in ECMAScript 2015 (ES6)?</h3>
+<p>ECMAScript 2015 introduced keywords: let and const for block-level scoping in JavaScript.</p>
+<script src="https://gist.github.com/NaveenKarippai/2a38642b2c0bf8efcfd853e84db71fa2.js"></script>
+
+<p>The variables declared with let or const keyword have the block in which they are declared, as well as any continued sub-blocks as their scope.</p>
+<h3>Hoisting in ES6</h3>
+<p>In ECMAScript 2015, let and const keyword variable declarations will hoist the variable to top of the block. However, referencing the variable in the block before variable declaration results in 'ReferenceError'. The difference between var/function declarations and let/const declarations is in the initialization portion. The former are initialized with undefined or generator function right when binding is created at top of the scope, while the latter stay uninitialized until let/const statement is run. The variable is called to be in a "temporal dead zone" from start of the block until the declaration is executed.</p>
+<script src="https://gist.github.com/NaveenKarippai/bc6a1d0069331e7f5905058e118f2e10.js"></script>
+
+<h3>Variable declaration keywords: 'var' v/s 'let'</h3>
+<script src="https://gist.github.com/NaveenKarippai/90d6e72090bda590d33280beeca33181.js"></script>
+
+<p>This happens due to block-level scoping of let variable declaration.</p>
+<h4>Summary:</h4>
+<p>Hoisting is a very powerful feature in JavaScript language. This provides high flexibility to the language, if used necessarily. Also, a strong understanding of scoping in JavaScript can help us to avoid many common mistakes.</p>
+<h4>Reference:</h4>
+<p>This article was originally posted on <a href="https://medium.com/@naveenkarippai/scoping-and-hoisting-in-javascript-2c2e82107427">medium</a></p>
+<h3>Bonus:</h3>
+<p>Are you new to Linux and wants to do Linux Command Line? Get my Udemy course on "Linux Command Line for Beginners" at a discount price (limited offer) by clicking <a href="https://www.udemy.com/linux-command-line-for-beginners-42/?couponCode=YELLOW-ELEPHANT">here</a>.</p>
         </section>
 
         <br><br><br>
