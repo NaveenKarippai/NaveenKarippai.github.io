@@ -52,7 +52,7 @@ The variables declared with let or const keyword have the block in which they ar
 
 ### Hoisting in ES6
 
-In ECMAScript 2015, let and const keyword variable declarations will hoist the variable to top of the block. However, referencing the variable in the block before variable declaration results in ReferenceError . The difference between var/function declarations and let/const declarations is in the initialization portion. The former are initialized with undefined or generator function right when binding is created at top of the scope, while the latter stay uninitialized until let/const statement is run. The variable is called to be in a "temporal dead zone" from start of the block until the declaration is executed.
+In ECMAScript 2015, let and const keyword variable declarations will hoist the variable to top of the block. However, referencing the variable in the block before variable declaration results in 'ReferenceError'. The difference between var/function declarations and let/const declarations is in the initialization portion. The former are initialized with undefined or generator function right when binding is created at top of the scope, while the latter stay uninitialized until let/const statement is run. The variable is called to be in a "temporal dead zone" from start of the block until the declaration is executed.
 
 <script src="https://gist.github.com/NaveenKarippai/bc6a1d0069331e7f5905058e118f2e10.js"></script>
 
