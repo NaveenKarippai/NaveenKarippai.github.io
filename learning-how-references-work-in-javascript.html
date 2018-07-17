@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Learning how references work in JavaScript &ndash; Yellow Elephant</title>
+
+    <!-- Meta -->
+    <meta name="description" content="Yellow Elephant &ndash; ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social -->
+    <meta property="article:author" content="Naveen Karippai" />
+    <meta property="article:section" content="Software" />
+    <meta property="article:published_time" content="2016-11-13" />
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Learning how references work in JavaScript"/>
+    <meta property="og:description" content="Quick dive into references in JavaScript"/>
+    <meta property="og:site_name" content="Yellow Elephant" />
+    <meta property="og:url" content="https://yellowelephant.xyz/learning-how-references-work-in-javascript.html"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Learning how references work in JavaScript">
+    <meta name="twitter:description" content="Quick dive into references in JavaScript">
+    <meta name="twitter:url" content="https://yellowelephant.xyz/learning-how-references-work-in-javascript.html">
+
+    <!-- Feed -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/pygments-highlight-github.css">
+
+    <!-- Icon -->
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://yellowelephant.xyz/theme/js/jqcloud.min.js"></script>
+  </head>
+
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://yellowelephant.xyz" id="header-logo" title="Home">YE</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-blue"><a href="/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-blue"><a href="/archives.html">Archive</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+
+
+    <br><br><br>
+
+    <article>
+      <header class="w3-container col-main">
+        <h1>Learning how references work in JavaScript</h1>
+        <div class="post-info">
+          <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+            <span><time datetime="2016-11-13T10:20:00+01:00">Sun 13 November 2016</time> in <a href="https://yellowelephant.xyz/category/software.html" title="All articles in category Software">Software</a></span>
+          </div>
+          <div>
+            <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+              <a href="https://yellowelephant.xyz/tag/javascript.html" title="All articles with Javascript tag">#javascript</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+              <a href="https://yellowelephant.xyz/tag/web-development.html" title="All articles with Web-Development tag">#web-development</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+              <a href="https://yellowelephant.xyz/tag/software.html" title="All articles with Software tag">#software</a>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <br>
+
+      <div class="headerimage-article">
+        <img src="https://i.imgur.com/KCxRUwM.jpg" style="width: 100%;">
+          <p class="caption">src: pixabay.com</p>
+      </div>
+
+      <div class="col-main w3-container">
+        <section id="content">
+          <h3>TL;DR:</h3>
+<p>There are NO pointers in JavaScript and references work different from what we would normally see in most other popular programming languages. In JavaScript, it's just NOT possible to have a reference from one variable to another variable. And, only compound values (Object, Array) can be assigned by reference.</p>
+<p class="adjust-width"><img alt="memegenerator" src="https://i.imgur.com/wd35HwV.jpg"></p>
+<p class="caption">src: memegenerator</p>
+<h3>Bottom line:</h3>
+<ul>
+<li>
+<p>The typeof value assigned to a variable decides whether the value is stored with assign-by-value or assign-by-reference</p>
+</li>
+<li>
+<p>On variable assignment, the scalar primitive values (Number, String, Boolean, undefined, null, Symbol) are assigned-by-value and compound values (Object, Array) are assigned-by-reference</p>
+</li>
+<li>
+<p>The references in JavaScript only point at contained values and NOT at other variables, or references</p>
+</li>
+<li>
+<p>In JavaScript, scalar primitive values (Number, String, Boolean, undefined, null, Symbol) are immutable and compound values (Object, Array) are mutable</p>
+</li>
+</ul>
+<h3>Quick example on assign-by-value:</h3>
+<p>In the code snippet below, we are assigning scalar primitive value (number) to a variable and thus assign-by-value applies here. Firstly, the variable batman is initialized and when the variable superman is assigned with the value stored in variable batman, it creates a new copy of the value and stores it. When the variable superman is modified, variable batman is left unaffected as they point to distinct values.</p>
+<script src="https://gist.github.com/NaveenKarippai/170a15479ed69ffcc2851c18b6c7022e.js"></script>
+
+<p class="adjust-width"><img alt="UML" src="https://cdn-images-1.medium.com/max/800/1*QsD4yzqkNYgA40-m4mAgpg.png"></p>
+<p class="caption">Tool: UMLet (GNU Linux client)</p>
+<h3>Quick example on assign-by-reference:</h3>
+<p>In the code snippet below, we are assigning a compound value (array) in a variable and thus assign-by-reference applies here. The variables flash and quicksilver are references to the same value (aka shared value). The references will point to the updated value when the shared value is modified .</p>
+<script src="https://gist.github.com/NaveenKarippai/92745155e8b565286b297907aecea7a3.js"></script>
+
+<p class="adjust-width"><img alt="UML" src="https://cdn-images-1.medium.com/max/800/1*jsPkapD8J8q022ev6NVsHw.png"></p>
+<p class="caption">Tool: UMLet (GNU Linux client)</p>
+<h3>How to create a new reference?</h3>
+<p>When the compound value in a variable is reassigned, a new reference is created. In JavaScript, unlike in most other popular programming languages, the references are pointers to value stored in variables and NOT pointers to other variables, or references.</p>
+<script src="https://gist.github.com/NaveenKarippai/8c8c8bd36c4d47f97ef8caaa08426743.js"></script>
+
+<p class="adjust-width"><img alt="UML" src="https://cdn-images-1.medium.com/max/800/1*D3uCMwUX6xvZNSY4azfhLg.png"></p>
+<p class="caption">Tool: UMLet (GNU Linux client)</p>
+<h3>How references work when values are passed as function parameters?</h3>
+<p>In the code snippet below, variable magneto is a compound value (Array object), thus it is assigned in variable (function argument) x with assign-by-reference. The Array.prototype.push method invoked inside IIFE mutates the value in variable magneto through JavaScript reference. But, the reassignment of variable x creates a new reference, and further modifications on it does NOT affect the reference to variable magneto.</p>
+<script src="https://gist.github.com/NaveenKarippai/4f187369a0ba3c3aa34a08937ea7d5c8.js"></script>
+
+<h3>How to change the original value in a compound variable passed as function argument through JavaScript reference?</h3>
+<p>The solution here would be to modify the existing compound value where the reference is pointing to. In the code snippet below, variable wolverine is a compound value (Array object) and on IIFE invocation, variable (function argument) x is assigned by reference. The Array.prototype.length property can be used to create an empty array by setting its value to 0. Thus, variable wolverine is changed to the new value set in variable x through JavaScript reference.</p>
+<script src="https://gist.github.com/NaveenKarippai/e5bd70413782da568c9d7159e800403d.js"></script>
+
+<h3>How to store a compound value through assign-by-value?</h3>
+<p>The solution here would be to make a manual copy of the compound value and then assign the copied value to a variable. Therefore, the reference of assigned value does NOT point back to the original value. The recommended approach to create a (shallow) copy of the compound value (Array object) is to invoke Array.prototype.slice method on it with no arguments passed.</p>
+<script src="https://gist.github.com/NaveenKarippai/2683e61649786928524dcb5f7caef725.js"></script>
+
+<p class="adjust-width"><img alt="UML" src="https://cdn-images-1.medium.com/max/800/1*2ADFn3r1_AH0CbW1YmFzlw.png"></p>
+<p class="caption">Tool: UMLet (GNU Linux client)</p>
+<h3>How to store a scalar primitive value through assign-by-reference?</h3>
+<p>The solution here would be to wrap scalar primitive value in a compound value (Object, Array) as its property value. Thus, it can be assigned-by-reference. In the code snippet below, scalar primitive value in variable speed is set as a property on object flash. Therefore, it is assigned-by-reference on IIFE invocation to variable (function argument) x.</p>
+<script src="https://gist.github.com/NaveenKarippai/8cf73227fd4b01ab8205bde010397f4b.js"></script>
+
+<h3>An aside:</h3>
+<p>In JavaScript, the scalar primitive values are immutable while compound values are mutable.</p>
+<script src="https://gist.github.com/NaveenKarippai/22a0c9aaf6f2fe3d7d09d9f9e116fe01.js"></script>
+
+<p class="adjust-width"><img alt="memegenerator" src="https://cdn-images-1.medium.com/max/800/1*G9y7ExBwqWnSEqAH4nov9Q.jpeg"></p>
+<p class="caption">src: memegenerator</p>
+<h3>Summary:</h3>
+<p>A good understanding of references in JavaScript can help developers to avoid many common mistakes and write better code.</p>
+<p>Happy coding!!</p>
+<h4>Reference:</h4>
+<p>This article was originally published on <a href="https://medium.com/@naveenkarippai/learning-how-references-work-in-javascript-a066a4e15600">medium</a></p>
+<h3>Bonus:</h3>
+<p>Are you new to Linux and wants to do Linux Command Line? Get my Udemy course on "Linux Command Line for Beginners" at a discount price (limited offer) by clicking <a href="https://www.udemy.com/linux-command-line-for-beginners-42/learn/v4/?couponCode=YELLOW-ELEPHANT">here</a>.</p>
+        </section>
+
+        <br><br><br>
+
+        <footer>
+          <div class="adjust-width">
+            <div id="author-block" class="w3-light-grey w3-border">
+              <div id="author-info">
+                <a href=""><img style="width: 60px; height: 60px;" src="https://www.gravatar.com/avatar/abcdefghijkl?s=240" onerror="this.src='theme/images/avatar.png'" alt="Avatar"></a>
+                <div style="margin-left: 20px; margin-top: 15px;">
+                  <a href=""><span id="author-name" class="w3-hover-text-dark-grey">Naveen Karippai</span></a>
+                  <p id="author-story">Hello world! I’m Maru. I like coffee, birds and Python.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+          <p style="font-size:10pt; font-style: italic;">Did you like this article? Share it with your friends!</p>
+          <div id="share" class="share">
+            <a href="http://www.facebook.com/sharer.php?u=https%3A//yellowelephant.xyz/learning-how-references-work-in-javascript.html&amp;t=Yellow%20Elephant%3A%20Learning%20how%20references%20work%20in%20JavaScript" target="_blank" class="w3-btn w3-indigo">
+              <i class="fa fa-facebook"></i> <span>Facebook</span>
+            </a>
+            <a href="http://twitter.com/share?url=https%3A//yellowelephant.xyz/learning-how-references-work-in-javascript.html&amp;text=Yellow%20Elephant%3A%20Learning%20how%20references%20work%20in%20JavaScript" target="_blank" class="w3-btn w3-blue">
+              <i class="fa fa-twitter"></i> <span>Twitter</span>
+            </a>
+            <a href="https://plus.google.com/share?url=https%3A//yellowelephant.xyz/learning-how-references-work-in-javascript.html" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="w3-btn w3-red">
+              <i class="fa fa-google-plus"></i> <span>Google</span>
+            </a>
+          </div>
+
+          <br><br><br>
+
+
+
+        </footer>
+      </div>
+    </article>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          ©
+          2018          Naveen Karippai
+        </span>
+      </div>
+    </footer>
+
+
+
+  </body>
+</html>

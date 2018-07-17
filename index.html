@@ -58,7 +58,7 @@
       <aside id="intro" class="w3-container w3-center w3-padding-32">
 	  <img src="https://i.imgur.com/4u2lfLj.png" alt="Yellow Elephant" width="150" height="230">
         <div>
-          <span id="intro-description">Hello world! I’m Maru.</span>
+          <span id="intro-description">Yellow Elephant. Created by Naveen Karippai</span>
           <ul class="social" style="margin: 0; margin-top: 10px; padding: 0;">
             <li><a class="sc-github" href="https://github.com/NaveenKarippai" target="_blank"><i class="fa fa-github"></i></a></li>
           </ul>
@@ -73,6 +73,65 @@
 
     <section id="listing">
       <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <div class="headerimage-card">
+            <a href="https://yellowelephant.xyz/learning-how-references-work-in-javascript.html"><img src="https://i.imgur.com/KCxRUwM.jpg" style="width: 100%;"></img></a>
+          </div>
+          <h2><a href="https://yellowelephant.xyz/learning-how-references-work-in-javascript.html">Learning how references work in JavaScript</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2016-11-13T10:20:00+01:00">Sun 13 November 2016</time> in <a href="https://yellowelephant.xyz/category/software.html" title="All articles in category Software">Software</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+                <a href="https://yellowelephant.xyz/tag/javascript.html" title="All articles with Javascript tag">#javascript</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+                <a href="https://yellowelephant.xyz/tag/web-development.html" title="All articles with Web-Development tag">#web-development</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+                <a href="https://yellowelephant.xyz/tag/software.html" title="All articles with Software tag">#software</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          Quick dive into references in JavaScript
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://yellowelephant.xyz/learning-how-references-work-in-javascript.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+	<!-- Show Tagcloud -->
+<br>
+<div id="tagcloud" class="jqcloud w3-card w3-margin-top w3-margin-bottom w3-light-grey w3-center">
+  <script>
+  var tags = [
+    {text: "#plugins", weight: 5, link: 'https://yellowelephant.xyz/tag/plugins.html', html: {title: "All Posts on Tag plugins"}},
+    {text: "#fun", weight: 5, link: 'https://yellowelephant.xyz/tag/fun.html', html: {title: "All Posts on Tag fun"}},
+    {text: "#javascript", weight: 4, link: 'https://yellowelephant.xyz/tag/javascript.html', html: {title: "All Posts on Tag javascript"}},
+    {text: "#web-development", weight: 4, link: 'https://yellowelephant.xyz/tag/web-development.html', html: {title: "All Posts on Tag web-development"}},
+    {text: "#software", weight: 4, link: 'https://yellowelephant.xyz/tag/software.html', html: {title: "All Posts on Tag software"}},
+    {text: "#pelican", weight: 1, link: 'https://yellowelephant.xyz/tag/pelican.html', html: {title: "All Posts on Tag pelican"}},
+    {text: "#three", weight: 1, link: 'https://yellowelephant.xyz/tag/three.html', html: {title: "All Posts on Tag three"}},
+    {text: "#test", weight: 1, link: 'https://yellowelephant.xyz/tag/test.html', html: {title: "All Posts on Tag test"}},
+    /* ... */
+  ];
+  $('#tagcloud').jQCloud(tags, {
+    height: 400,
+    autoResize: true,
+    shape: 'rectangular',
+    center: {x: 0.4, y: 0.5},
+    steps: 5
+  });
+  </script>
+</div>
+<br>
+<br>      <article class="w3-container w3-card-2 w3-white col-main">
         <header>
           <div class="headerimage-card">
             <a href="https://yellowelephant.xyz/scoping-and-hoisting-in-javascript.html"><img src="https://i.imgur.com/lCZe9cs.jpg" style="width: 100%;"></img></a>
@@ -107,31 +166,9 @@
 
       <br><br><br>
 	<!-- Show Tagcloud -->
-<br>
-<div id="tagcloud" class="jqcloud w3-card w3-margin-top w3-margin-bottom w3-light-grey w3-center">
-  <script>
-  var tags = [
-    {text: "#plugins", weight: 5, link: 'https://yellowelephant.xyz/tag/plugins.html', html: {title: "All Posts on Tag plugins"}},
-    {text: "#fun", weight: 5, link: 'https://yellowelephant.xyz/tag/fun.html', html: {title: "All Posts on Tag fun"}},
-    {text: "#pelican", weight: 1, link: 'https://yellowelephant.xyz/tag/pelican.html', html: {title: "All Posts on Tag pelican"}},
-    {text: "#javascript", weight: 1, link: 'https://yellowelephant.xyz/tag/javascript.html', html: {title: "All Posts on Tag javascript"}},
-    {text: "#three", weight: 1, link: 'https://yellowelephant.xyz/tag/three.html', html: {title: "All Posts on Tag three"}},
-    {text: "#test", weight: 1, link: 'https://yellowelephant.xyz/tag/test.html', html: {title: "All Posts on Tag test"}},
-    {text: "#web-development", weight: 1, link: 'https://yellowelephant.xyz/tag/web-development.html', html: {title: "All Posts on Tag web-development"}},
-    {text: "#software", weight: 1, link: 'https://yellowelephant.xyz/tag/software.html', html: {title: "All Posts on Tag software"}},
-    /* ... */
-  ];
-  $('#tagcloud').jQCloud(tags, {
-    height: 400,
-    autoResize: true,
-    shape: 'rectangular',
-    center: {x: 0.4, y: 0.5},
-    steps: 5
-  });
-  </script>
-</div>
-<br>
-<br>      <article class="w3-container w3-card-2 w3-white col-main">
+	<!-- Whitespace between Articles -->
+
+      <article class="w3-container w3-card-2 w3-white col-main">
         <header>
           <h2><a href="https://yellowelephant.xyz/my-super-post2.html">Article7</a></h2>
           <div class="post-info">
@@ -199,44 +236,15 @@
 	<!-- Show Tagcloud -->
 	<!-- Whitespace between Articles -->
 
-      <article class="w3-container w3-card-2 w3-white col-main">
-        <header>
-          <div class="headerimage-card">
-            <a href="https://yellowelephant.xyz/article3.html"><img src="https://i.imgur.com/3uaUoF1.jpg" style="width: 100%;"></img></a>
-          </div>
-          <h2><a href="https://yellowelephant.xyz/article3.html">Article3</a></h2>
-          <div class="post-info">
-            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
-              <span><time datetime="2010-12-03T10:20:00+01:00">Fri 03 December 2010</time> in <a href="https://yellowelephant.xyz/category/travel.html" title="All articles in category Travel">Travel</a></span>
-            </div>
-            <div class="w3-margin-right">
-              <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
-                <a href="https://yellowelephant.xyz/tag/fun.html" title="All articles with Fun tag">#fun</a>
-              </span>
-              <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
-                <a href="https://yellowelephant.xyz/tag/pelican.html" title="All articles with Pelican tag">#pelican</a>
-              </span>
-              <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
-                <a href="https://yellowelephant.xyz/tag/plugins.html" title="All articles with Plugins tag">#plugins</a>
-              </span>
-            </div>
-          </div>
-        </header>
 
-        <div class="entry-content">
-          Reference: http://fabianbloggt.de/minimalx-article-format.html image specs: PNG image data, 1300 x 600, 8-bit/color RGBA, non-interlaced Following is a review of my favorite mechanical keyboard. content3, yeah! „Lorem ipsum dolor sit amet“ This is an example caption
-        </div>
-
-        <footer>
-          <a class="w3-btn w3-green w3-right" href="https://yellowelephant.xyz/article3.html">Read &#10093;</a>
-        </footer>
-      </article>
-
+      <div class="w3-center">
+        <ul class="w3-pagination">
+          <li><a class="w3-green" href="https://yellowelephant.xyz/index.html">1</a></li>
+          <li><a class="" href="https://yellowelephant.xyz/index2.html">2</a></li>
+          <li><a href="https://yellowelephant.xyz/index2.html">&#10095;</a></li>
+        </ul>
+      </div>
       <br><br><br>
-	<!-- Show Tagcloud -->
-	<!-- Whitespace between Articles -->
-
-
 
     </section>
 
