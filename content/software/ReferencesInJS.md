@@ -108,6 +108,7 @@ src: memegenerator
 ### Summary:
 
 A good understanding of references in JavaScript can help developers to avoid many common mistakes and write better code.
+
 Happy coding!!
 
 #### Reference: 

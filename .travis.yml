@@ -11,15 +11,9 @@ python:
 install:
 - pip install pelican
 - pip install markdown
-- pip install disqus-python
 - pip install pylint
-- pip install restructuredtext_lint
-- pip install hint
-before_script:
-- chmod ugo+x lint.sh
 script:
 - pylint --errors-only *.py
-- ./lint.sh
 - make html
 deploy:
   provider: pages
