@@ -99,10 +99,10 @@ SITEMAP = {
 #DISQUS_PUBLIC_KEY = os.environ["DISQUS_PUBLIC_KEY"]
 
 # Menu
-MENUITEMS = (
-    ('Categories', '/' + 'categories.html'),
-    ('Archive', '/' + 'archives.html'),
-)
+# MENUITEMS = (
+#     ('Categories', '/' + 'categories.html'),
+#     ('Archive', '/' + 'archives.html'),
+# )
 
 # Author
 AUTHOR_INTRO = "Yellow Elephant. Created by Naveen Karippai"
