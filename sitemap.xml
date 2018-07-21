@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/</loc>
-<lastmod>2018-07-17T20:38:32-00:00</lastmod>
+<lastmod>2018-07-21T19:20:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/archives.html</loc>
-<lastmod>2018-07-17T20:38:32-00:00</lastmod>
+<lastmod>2018-07-21T19:20:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/tags.html</loc>
-<lastmod>2018-07-17T20:38:32-00:00</lastmod>
+<lastmod>2018-07-21T19:20:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/categories.html</loc>
-<lastmod>2018-07-17T20:38:32-00:00</lastmod>
+<lastmod>2018-07-21T19:20:31-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://yellowelephant.xyz/how-to-reuse-an-old-laptop.html</loc>
+<lastmod>2017-07-21T00:00:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -60,13 +67,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://yellowelephant.xyz/article3.html</loc>
-<lastmod>2010-12-03T10:20:00+01:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://yellowelephant.xyz/category/moon.html</loc>
 <lastmod>2011-12-01T10:21:00+00:53</lastmod>
 <changefreq>daily</changefreq>
@@ -88,15 +88,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://yellowelephant.xyz/category/travel.html</loc>
-<lastmod>2010-12-03T10:20:00+00:53</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://yellowelephant.xyz/tag/pelican.html</loc>
-<lastmod>2010-12-03T10:20:00+00:53</lastmod>
+<loc>https://yellowelephant.xyz/tag/linux.html</loc>
+<lastmod>2017-07-21T00:00:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -167,13 +160,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://yellowelephant.xyz/author/naveen-karippai.html</loc>
 <lastmod>2018-07-16T19:30:00+00:53</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://yellowelephant.xyz/author/test-user.html</loc>
-<lastmod>2010-12-03T10:20:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

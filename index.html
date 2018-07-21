@@ -47,8 +47,6 @@
         <a href="https://yellowelephant.xyz" id="header-logo" title="Home">YE</a>
         <nav id="header-menu">
           <ul>
-            <li class="w3-bottombar w3-border-white w3-hover-border-blue"><a href="/categories.html">Categories</a></li>
-            <li class="w3-bottombar w3-border-white w3-hover-border-blue"><a href="/archives.html">Archive</a></li>
           </ul>
         </nav>
       </header>
@@ -73,6 +71,62 @@
 
     <section id="listing">
       <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <div class="headerimage-card">
+            <a href="https://yellowelephant.xyz/how-to-reuse-an-old-laptop.html"><img src="https://i.imgur.com/Gb0kUiZ.jpg" style="width: 100%;"></img></a>
+          </div>
+          <h2><a href="https://yellowelephant.xyz/how-to-reuse-an-old-laptop.html">How to reuse an old Laptop?</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2017-07-21T00:00:00+02:00">Fri 21 July 2017</time> in <a href="https://yellowelephant.xyz/category/software.html" title="All articles in category Software">Software</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+                <a href="https://yellowelephant.xyz/tag/linux.html" title="All articles with Linux tag">#linux</a>
+              </span>
+              <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+                <a href="https://yellowelephant.xyz/tag/software.html" title="All articles with Software tag">#software</a>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div class="entry-content">
+          Booting Puppy GNU/Linux on an aged Laptop + basic Hardware cleaning
+        </div>
+
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="https://yellowelephant.xyz/how-to-reuse-an-old-laptop.html">Read &#10093;</a>
+        </footer>
+      </article>
+
+      <br><br><br>
+	<!-- Show Tagcloud -->
+<br>
+<div id="tagcloud" class="jqcloud w3-card w3-margin-top w3-margin-bottom w3-light-grey w3-center">
+  <script>
+  var tags = [
+    {text: "#software", weight: 5, link: 'https://yellowelephant.xyz/tag/software.html', html: {title: "All Posts on Tag software"}},
+    {text: "#javascript", weight: 4, link: 'https://yellowelephant.xyz/tag/javascript.html', html: {title: "All Posts on Tag javascript"}},
+    {text: "#web-development", weight: 4, link: 'https://yellowelephant.xyz/tag/web-development.html', html: {title: "All Posts on Tag web-development"}},
+    {text: "#plugins", weight: 4, link: 'https://yellowelephant.xyz/tag/plugins.html', html: {title: "All Posts on Tag plugins"}},
+    {text: "#fun", weight: 4, link: 'https://yellowelephant.xyz/tag/fun.html', html: {title: "All Posts on Tag fun"}},
+    {text: "#linux", weight: 1, link: 'https://yellowelephant.xyz/tag/linux.html', html: {title: "All Posts on Tag linux"}},
+    {text: "#three", weight: 1, link: 'https://yellowelephant.xyz/tag/three.html', html: {title: "All Posts on Tag three"}},
+    {text: "#test", weight: 1, link: 'https://yellowelephant.xyz/tag/test.html', html: {title: "All Posts on Tag test"}},
+    /* ... */
+  ];
+  $('#tagcloud').jQCloud(tags, {
+    height: 400,
+    autoResize: true,
+    shape: 'rectangular',
+    center: {x: 0.4, y: 0.5},
+    steps: 5
+  });
+  </script>
+</div>
+<br>
+<br>      <article class="w3-container w3-card-2 w3-white col-main">
         <header>
           <div class="headerimage-card">
             <a href="https://yellowelephant.xyz/learning-how-references-work-in-javascript.html"><img src="https://i.imgur.com/KCxRUwM.jpg" style="width: 100%;"></img></a>
@@ -107,31 +161,9 @@
 
       <br><br><br>
 	<!-- Show Tagcloud -->
-<br>
-<div id="tagcloud" class="jqcloud w3-card w3-margin-top w3-margin-bottom w3-light-grey w3-center">
-  <script>
-  var tags = [
-    {text: "#plugins", weight: 5, link: 'https://yellowelephant.xyz/tag/plugins.html', html: {title: "All Posts on Tag plugins"}},
-    {text: "#fun", weight: 5, link: 'https://yellowelephant.xyz/tag/fun.html', html: {title: "All Posts on Tag fun"}},
-    {text: "#javascript", weight: 4, link: 'https://yellowelephant.xyz/tag/javascript.html', html: {title: "All Posts on Tag javascript"}},
-    {text: "#web-development", weight: 4, link: 'https://yellowelephant.xyz/tag/web-development.html', html: {title: "All Posts on Tag web-development"}},
-    {text: "#software", weight: 4, link: 'https://yellowelephant.xyz/tag/software.html', html: {title: "All Posts on Tag software"}},
-    {text: "#pelican", weight: 1, link: 'https://yellowelephant.xyz/tag/pelican.html', html: {title: "All Posts on Tag pelican"}},
-    {text: "#three", weight: 1, link: 'https://yellowelephant.xyz/tag/three.html', html: {title: "All Posts on Tag three"}},
-    {text: "#test", weight: 1, link: 'https://yellowelephant.xyz/tag/test.html', html: {title: "All Posts on Tag test"}},
-    /* ... */
-  ];
-  $('#tagcloud').jQCloud(tags, {
-    height: 400,
-    autoResize: true,
-    shape: 'rectangular',
-    center: {x: 0.4, y: 0.5},
-    steps: 5
-  });
-  </script>
-</div>
-<br>
-<br>      <article class="w3-container w3-card-2 w3-white col-main">
+	<!-- Whitespace between Articles -->
+
+      <article class="w3-container w3-card-2 w3-white col-main">
         <header>
           <div class="headerimage-card">
             <a href="https://yellowelephant.xyz/scoping-and-hoisting-in-javascript.html"><img src="https://i.imgur.com/lCZe9cs.jpg" style="width: 100%;"></img></a>
@@ -195,40 +227,6 @@
 
         <footer>
           <a class="w3-btn w3-green w3-right" href="https://yellowelephant.xyz/my-super-post2.html">Read &#10093;</a>
-        </footer>
-      </article>
-
-      <br><br><br>
-	<!-- Show Tagcloud -->
-	<!-- Whitespace between Articles -->
-
-      <article class="w3-container w3-card-2 w3-white col-main">
-        <header>
-          <h2><a href="https://yellowelephant.xyz/my-super-post.html">Article1</a></h2>
-          <div class="post-info">
-            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
-              <span><time datetime="2011-12-01T10:21:00+01:00">Thu 01 December 2011</time> in <a href="https://yellowelephant.xyz/category/moon.html" title="All articles in category Moon">Moon</a></span>
-            </div>
-            <div class="w3-margin-right">
-              <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
-                <a href="https://yellowelephant.xyz/tag/fun.html" title="All articles with Fun tag">#fun</a>
-              </span>
-              <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
-                <a href="https://yellowelephant.xyz/tag/plugins.html" title="All articles with Plugins tag">#plugins</a>
-              </span>
-              <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
-                <a href="https://yellowelephant.xyz/tag/test.html" title="All articles with Test tag">#test</a>
-              </span>
-            </div>
-          </div>
-        </header>
-
-        <div class="entry-content">
-          short trip
-        </div>
-
-        <footer>
-          <a class="w3-btn w3-green w3-right" href="https://yellowelephant.xyz/my-super-post.html">Read &#10093;</a>
         </footer>
       </article>
 
