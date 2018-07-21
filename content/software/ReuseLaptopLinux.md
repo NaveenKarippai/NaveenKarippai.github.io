@@ -193,6 +193,6 @@ Puppy Linux could turn even an ancient computer from 1990's to a super-fast full
 
 
 
-*An aside:* This post was originally posted on [imgur](https://imgur.com/a/mdBd5).
+*An aside:* This post was originally published on [imgur](https://imgur.com/a/mdBd5).
 
 

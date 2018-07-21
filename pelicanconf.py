@@ -29,7 +29,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-DEFAULT_PAGINATION = 4
+DEFAULT_PAGINATION = 3
 USE_FOLDER_AS_CATEGORY = False
 
 # Uncomment following line if you want document-relative URLs when developing
@@ -62,7 +62,7 @@ DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 
 # Social widget
-SOCIAL = (('github', 'https://github.com/NaveenKarippai'),)
+SOCIAL = (('github', 'https://github.com/NaveenKarippai'), ('linkedin', 'https://www.linkedin.com/in/naveen-karippai-ab7b949a/'))
 
 SHARE_BUTTONS = ('twitter', 'facebook', 'whatsapp', 'mail')
  
@@ -73,7 +73,7 @@ PLUGINS = ["tag_cloud", "sitemap"]
 
 # TAG_CLOUD plugin
 TAG_CLOUD = True
-TAG_CLOUD_STEPS = 5
+TAG_CLOUD_STEPS = 6
 TAG_CLOUD_MAX_ITEMS = 40
 TAG_CLOUD_BADGE = True
 TAG_CLOUD_SORTING = 'size'
