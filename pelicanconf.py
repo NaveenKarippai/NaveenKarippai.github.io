@@ -103,6 +103,9 @@ SITEMAP = {
 #     ('Categories', '/' + 'categories.html'),
 #     ('Archive', '/' + 'archives.html'),
 # )
+MENUITEMS = (
+     ('Categories', '/' + 'categories.html'),
+)
 
 # Author
 AUTHOR_INTRO = "Yellow Elephant. Created by Naveen Karippai"
