@@ -109,7 +109,7 @@ MENUITEMS = (
 
 # Author
 AUTHOR_INTRO = "Yellow Elephant. Created by Naveen Karippai"
-AUTHOR_DESCRIPTION = 'Hello world! I’m Maru. I like coffee, birds and Python.'
+AUTHOR_DESCRIPTION = "Software Developer . Arch Linux user . Open-source Software enthusiast"
 AUTHOR_AVATAR = 'https://www.gravatar.com/avatar/abcdefghijkl?s=240'
 
 # Theme customizations

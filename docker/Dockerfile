@@ -8,7 +8,7 @@ RUN apk update && apk add py-pip
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 # install required packages
-RUN apk update && apk add git tmux
+RUN apk update && apk add git tmux make
 # add GNU less
 RUN apk --update add less
 # fix interactive staging
