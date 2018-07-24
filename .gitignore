@@ -102,3 +102,6 @@ ENV/
 
 # static generated files
 output/
+
+# docker ashell
+.ash_history

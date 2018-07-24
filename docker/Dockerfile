@@ -8,13 +8,15 @@ RUN apk update && apk add py-pip
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 # install required packages
-RUN apk update && apk add git tmux make
+RUN apk update && apk add git tmux make openssh
 # add GNU less
 RUN apk --update add less
 # fix interactive staging
 RUN apk add git-perl
 # fix colors in git diff
-RUN git config --global core.pager 'less -R'
+RUN git config --global core.pager "less -R"
+RUN git config --global user.name "NaveenKarippai"
+RUN git config --global user.email naveenranjankarippai@gmail.com
 # expose port
 EXPOSE 8000/tcp
 # add user named tux
