@@ -108,8 +108,8 @@ MENUITEMS = (
 )
 
 # Author
-AUTHOR_INTRO = "Yellow Elephant. Created by Naveen Karippai"
-AUTHOR_DESCRIPTION = "Software Developer . Arch Linux user . Open-source Software enthusiast"
+AUTHOR_INTRO = "YELLOW ELEPHANT &#9774; Naveen Karippai"
+AUTHOR_DESCRIPTION = "Software Developer &#9775; Arch Linux User &#9775; Open-Source Software Enthusiast"
 AUTHOR_AVATAR = 'https://www.gravatar.com/avatar/abcdefghijkl?s=240'
 
 # Theme customizations
