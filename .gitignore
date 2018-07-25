@@ -107,3 +107,4 @@ output/
 .ash_history
 .ssh/
 .viminfo
+.less*
