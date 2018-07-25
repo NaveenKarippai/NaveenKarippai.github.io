@@ -105,3 +105,4 @@ output/
 
 # docker ashell
 .ash_history
+.ssh/
