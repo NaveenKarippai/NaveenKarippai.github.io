@@ -109,7 +109,7 @@ MENUITEMS = (
 
 # Author
 AUTHOR_INTRO = "YELLOW ELEPHANT &#9774; Naveen Karippai"
-AUTHOR_DESCRIPTION = "Software Developer &#9775; Arch Linux User &#9775; Open-Source Software Enthusiast"
+AUTHOR_DESCRIPTION = "Software Engineer &#9775; Earth C137"
 AUTHOR_AVATAR = 'https://www.gravatar.com/avatar/abcdefghijkl?s=240'
 
 # Theme customizations

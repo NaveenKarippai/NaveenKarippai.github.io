@@ -3,8 +3,6 @@ Tags: travel
 Date: 2017-10-10
 HeaderImage: https://i.imgur.com/Uf2U3Qq.jpg
 HeaderImageCaption: Yak in Shimla
-Author: Maru
-AuthorStory: My stoy
 Summary: One month trip across the country
 Category: Travel
 
