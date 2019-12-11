@@ -62,9 +62,9 @@ DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 
 # Social widget
-SOCIAL = (('github', 'https://github.com/NaveenKarippai'), ('linkedin', 'https://www.linkedin.com/in/naveen-karippai-ab7b949a/'))
+SOCIAL = (('github', 'https://github.com/NaveenKarippai'), ('linkedin', 'https://www.linkedin.com/in/naveen-karippai/'))
 
-SHARE_BUTTONS = ('twitter', 'facebook', 'whatsapp', 'mail')
+SHARE_BUTTONS = ('twitter', 'facebook')
  
 # Plugins
 PLUGIN_PATHS = ['plugins']
@@ -109,7 +109,7 @@ MENUITEMS = (
 
 # Author
 AUTHOR_INTRO = "YELLOW ELEPHANT &#9774; Naveen Karippai"
-AUTHOR_DESCRIPTION = "Software Engineer &#9775; Earth C137"
+AUTHOR_DESCRIPTION = "&#9775; Software Engineer from Earth C137 &#9775;"
 AUTHOR_AVATAR = 'https://www.gravatar.com/avatar/abcdefghijkl?s=240'
 
 # Theme customizations
