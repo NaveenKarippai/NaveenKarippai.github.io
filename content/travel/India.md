@@ -1,5 +1,5 @@
-Title: My India trip
-Tags: travel, India
+Title: Trip across India
+Tags: travel
 Date: 2017-10-10
 HeaderImage: https://i.imgur.com/Uf2U3Qq.jpg
 HeaderImageCaption: Yak in Shimla
