@@ -1,4 +1,4 @@
-Title: Budapest: Think Hungary more than expected
+Title: Hungary: Think Hungary more than expected
 Tags: travel
 Date: 2018-08-10
 HeaderImage: https://i.imgur.com/wkAg3bf.jpg
