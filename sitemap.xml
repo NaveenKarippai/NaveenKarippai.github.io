@@ -5,34 +5,41 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/</loc>
-<lastmod>2019-12-15T19:34:11-00:00</lastmod>
+<lastmod>2019-12-15T19:51:40-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/archives.html</loc>
-<lastmod>2019-12-15T19:34:11-00:00</lastmod>
+<lastmod>2019-12-15T19:51:40-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/tags.html</loc>
-<lastmod>2019-12-15T19:34:11-00:00</lastmod>
+<lastmod>2019-12-15T19:51:40-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/categories.html</loc>
-<lastmod>2019-12-15T19:34:11-00:00</lastmod>
+<lastmod>2019-12-15T19:51:40-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://yellowelephant.xyz/budapest-think-hungary-more-than-expected.html</loc>
+<loc>https://yellowelephant.xyz/hungary-think-hungary-more-than-expected.html</loc>
+<lastmod>2018-08-10T00:00:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://yellowelephant.xyz/switzerland-get-natural.html</loc>
 <lastmod>2018-08-10T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
