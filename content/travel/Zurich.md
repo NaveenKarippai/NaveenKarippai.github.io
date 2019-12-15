@@ -1,6 +1,6 @@
 Title: Switzerland: Get Natural
 Tags: travel
-Date: 2018-08-10
+Date: 2018-09-11
 HeaderImage: https://i.imgur.com/wkAg3bf.jpg
 HeaderImageCaption: Zurich
 Summary: A week in Zurich
