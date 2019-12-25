@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Learning to debug with Git &ndash; Yellow Elephant</title>
+
+    <!-- Meta -->
+    <meta name="description" content="Yellow Elephant &ndash; ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social -->
+    <meta property="article:author" content="Naveen Karippai" />
+    <meta property="article:section" content="Software" />
+    <meta property="article:published_time" content="2016-11-19" />
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Learning to debug with Git"/>
+    <meta property="og:description" content="Debugging defects with Git"/>
+    <meta property="og:site_name" content="Yellow Elephant" />
+    <meta property="og:url" content="https://yellowelephant.xyz/learning-to-debug-with-git.html"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Learning to debug with Git">
+    <meta name="twitter:description" content="Debugging defects with Git">
+    <meta name="twitter:url" content="https://yellowelephant.xyz/learning-to-debug-with-git.html">
+
+    <!-- Feed -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/pygments-highlight-github.css">
+
+    <!-- Icon -->
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://yellowelephant.xyz/theme/js/jqcloud.min.js"></script>
+  </head>
+
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://yellowelephant.xyz" id="header-logo" title="Home">YE</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-blue"><a href="/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-blue"><a href="/archives.html">Archive</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+
+
+    <br><br><br>
+
+    <article>
+      <header class="w3-container col-main">
+        <h1>Learning to debug with Git</h1>
+        <div class="post-info">
+          <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+            <span><time datetime="2016-11-19T12:20:00+01:00">Sat 19 November 2016</time> in <a href="https://yellowelephant.xyz/category/software.html" title="All articles in category Software">Software</a></span>
+          </div>
+          <div>
+            <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+              <a href="https://yellowelephant.xyz/tag/git.html" title="All articles with Git tag">#git</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+              <a href="https://yellowelephant.xyz/tag/software.html" title="All articles with Software tag">#software</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+              <a href="https://yellowelephant.xyz/tag/debug.html" title="All articles with Debug tag">#debug</a>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <br>
+
+      <div class="headerimage-article">
+        <img src="https://miro.medium.com/max/480/1*go7UVRBQXo1GEnCgTA9uYg.jpeg" style="width: 100%;">
+          <p class="caption">src: memegenerator</p>
+      </div>
+
+      <div class="col-main w3-container">
+        <section id="content">
+          <h3>TL;DR:</h3>
+<p>Git, the stupid content tracker, provides us a couple of tools to debug the issues in our project. It could be easier to find the author of a specific line of code, or search for the changeset that introduced a bug in the project by leveraging on git tools.</p>
+<h3>Bottom line:</h3>
+<ul>
+<li>
+<p><strong>git grep</strong> command can be used to search for a string, or a regular expression in the working directory (project)</p>
+</li>
+<li>
+<p><strong>git blame</strong> command can be used to find the author of a specific line of code, or the commit (SHA-1) that introduced it</p>
+</li>
+<li>
+<p><strong>git bisect</strong> tool can be used to find out the commit that introduced the bug in the project</p>
+</li>
+</ul>
+<p><em>Tip of the day</em>: run $ man git [command] on terminal to see the manual of a specific git command</p>
+<h3>Quick introduction on Git:</h3>
+<p>Git, the stupid content tracker, is a fast and scalable distributed version control system that is designed to manage projects with efficiency. It is free and open sourced.</p>
+<p>For this post, we will be using Git on the command line (terminal). As an alternative, you can either checkout built-in git GUI tools for commiting [git gui] and browsing [gitk], or third-party git GUI clients [git cola].</p>
+<h3>git grep</h3>
+<p><strong>When?</strong> you want to find a string, or a regular expression in any of the files in the working directory (project).</p>
+<p><strong>Why?</strong> It can be efficient and faster with git grep to search in the project when we are running a machine with low specs. Also, it avoids searching through gitignore-d files, by default.</p>
+<p><strong>How?</strong> we can execute $ git grep [string|RegExp] on terminal to return the list of tracked files in the working directory, that contains our search keyword.</p>
+<p><em>Example</em>: $ git grep 'downloadImages'</p>
+<p class="adjust-width"><img alt="zsh" src="https://miro.medium.com/max/769/1*Y3-iR9vyaP7q81OaXHVGUg.png"></p>
+<p class="caption">Terminal: Z shell on GNU Linux</p>
+<p><strong>Bonus</strong>: we could use option -n, --line-number to show the line number of matching lines of code. Also, using option -i, --ignore-case would ignore case differences between search keyword and file.</p>
+<p><em>Example</em>: $ git grep -in 'John Lennon'</p>
+<p><strong>An aside</strong>: we can search for a keyword in a specific file by setting its file path while running git grep command. [EDIT] That said, “grep” stands for Globally search with Regular Expression and Print.</p>
+<p><em>Example</em>: $ git grep 'John Lennon' Music/TheBeatles.txt</p>
+<h3>git blame</h3>
+<p><strong>When?</strong> you want to find the commit (SHA-1) that introduced the specific line of code that causes a bug in the project. Also, you want to find the name of the author for a specific line of code, to ask for more information, or to blame ;)</p>
+<p><strong>Why?</strong> It shows you the name of the author for a specific line of code, to ask for further information, or to blame. By getting commit (SHA-1) for a specific line of code, you can show the changeset that introduced it, for getting additional information.</p>
+<p>Example: run $ git show #SHA-1 to show the commit</p>
+<p><strong>How?</strong> we can run $ git blame filePath/fileName to show the annotation of a specific file, with commit (SHA-1) of each line of code in it, and what person authored each commit.</p>
+<p class="adjust-width"><img alt="zsh" src="https://miro.medium.com/max/881/1*EEnC6VNgC0bG2y8fQw5zQA.png"></p>
+<p class="caption">Terminal: Z shell on GNU Linux</p>
+<p><strong>Bonus</strong>: we could use the simple shell script in the code snippet below, to show the names of all contributors on a specific file in the project, along with the information on number of lines contributed by each of them. This would help us to identify the first person to go for more information on a specific file in the project.</p>
+<script src="https://gist.github.com/NaveenKarippai/31103b3572916436e48ae687d923be85.js"></script>
+
+<p><em>Example</em>: $ git contr filepath/filename</p>
+<p><strong>An aside</strong>: use option -L to limit the output of git blame to specific lines of code. And, use option -C to see where the sections of code originally came from. Basically, it tells us the original author and commit (SHA-1) regardless of the refactoring done afterwards.</p>
+<p><em>Example</em>: $ git blame -LC 10,15 filepath/filename</p>
+<h2>git bisect</h2>
+<p><strong>When?</strong> you want to find the git commit that introduced the bug on a project, which contains (let us say) 100+ commits. Also, you don’t know what file in the project contains the bug.</p>
+<p><strong>Why?</strong> git bisect is essentially a binary search over the git commit tree to identify the first “bad” commit. This is (obviously) efficient and faster than trying to find “bad” commit manually by checking-out git commits in random.</p>
+<p><strong>How?</strong></p>
+<ol>
+<li>
+<p>we can run the command $ git bisect start to initiate with binary search mode on git to find a bug.</p>
+</li>
+<li>
+<p>we need to tag a “good” commit (bug-free commit) from git commit history. Therefore, we should log the git commit history to find a “good” commit. But, let us set the option --oneline on git log command to see only the name (subject) of git commits. For example: $ git log --oneline. Then, find a “good” commit (SHA-1), and run $ git bisect good #SHA-1 to inform git about the “good” commit.</p>
+</li>
+<li>
+<p>we need to find the “bad” commit (bug-present commit) for git to do binary search between “good” and “bad” commits, and thereby find the bug. Since the latest commit has the bug, usually it can be assigned as the “bad” commit. For an example: $ git bisect bad #SHA-1.</p>
+</li>
+<li>
+<p>repeat (2) and (3) while git walks us through git commit history and tag “good”/“bad” commits.</p>
+</li>
+<li>
+<p>when we have successfully found out the first “bad” commit (source of bug), we can exit the git binary search mode by executing $ git bisect reset.</p>
+</li>
+</ol>
+<p><strong>Bonus</strong>: you can automate git bisect by writing unit tests that identifies the bug, and running them automatically. The code snippet below should do the trick.</p>
+<script src="https://gist.github.com/NaveenKarippai/b34f73bd81a70987c14fa4e7102818fb.js"></script>
+
+<p><strong>An aside</strong>: we should only search for a single bug in the process of running git bisect. If we need to find multiple bugs, then run git bisect separately for each of the bugs. Also, to get further information, or inspect a “bad” commit, we can run $ git show #SHA-1.</p>
+<p><strong>Summary</strong>: A good knowledge on git tools can help developers to debug the code with ease. This would make life happier.</p>
+<p>Happy coding!!</p>
+<h4>Reference:</h4>
+<p>This article was originally published on <a href="https://medium.com/@naveenkarippai/learning-to-debug-with-git-20bf13318164">medium</a></p>
+<h3>Bonus:</h3>
+<p>Are you new to Linux and wants to do Linux Command Line? Get my Udemy course on "Linux Command Line for Beginners" at a discount price (limited offer) by clicking <a href="https://www.udemy.com/linux-command-line-for-beginners-42/learn/v4/?couponCode=YELLOW-ELEPHANT">here</a>.</p>
+        </section>
+
+        <br><br><br>
+
+        <footer>
+          <div class="adjust-width">
+            <div id="author-block" class="w3-light-grey w3-border">
+              <div id="author-info">
+                <div style="margin-left: 20px; margin-top: 15px;">
+                  <a href=""><span id="author-name" class="w3-hover-text-dark-grey">Naveen Karippai</span></a>
+                  <p id="author-story">&#9775; Software Engineer from Earth C-137 &#9775;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+          <p style="font-size:10pt; font-style: italic;">Did you like this article? Share it with your friends!</p>
+          <div id="share" class="share">
+            <a href="http://www.facebook.com/sharer.php?u=https%3A//yellowelephant.xyz/learning-to-debug-with-git.html&amp;t=Yellow%20Elephant%3A%20Learning%20to%20debug%20with%20Git" target="_blank" class="w3-btn w3-indigo">
+              <i class="fa fa-facebook"></i> <span>Facebook</span>
+            </a>
+            <a href="http://twitter.com/share?url=https%3A//yellowelephant.xyz/learning-to-debug-with-git.html&amp;text=Yellow%20Elephant%3A%20Learning%20to%20debug%20with%20Git" target="_blank" class="w3-btn w3-blue">
+              <i class="fa fa-twitter"></i> <span>Twitter</span>
+            </a>
+          </div>
+
+          <br><br><br>
+
+
+
+        </footer>
+      </div>
+    </article>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          ©
+          2018&dash;2019          Naveen Karippai
+        </span>
+      </div>
+    </footer>
+
+
+
+  </body>
+</html>

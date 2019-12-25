@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/</loc>
-<lastmod>2019-12-25T18:30:24-00:00</lastmod>
+<lastmod>2019-12-25T19:06:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/archives.html</loc>
-<lastmod>2019-12-25T18:30:24-00:00</lastmod>
+<lastmod>2019-12-25T19:06:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/tags.html</loc>
-<lastmod>2019-12-25T18:30:24-00:00</lastmod>
+<lastmod>2019-12-25T19:06:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/categories.html</loc>
-<lastmod>2019-12-25T18:30:24-00:00</lastmod>
+<lastmod>2019-12-25T19:06:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -67,6 +67,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://yellowelephant.xyz/learning-to-debug-with-git.html</loc>
+<lastmod>2016-11-19T12:20:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://yellowelephant.xyz/learning-how-references-work-in-javascript.html</loc>
 <lastmod>2016-11-13T10:20:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -95,6 +102,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://yellowelephant.xyz/tag/git.html</loc>
+<lastmod>2016-11-19T12:20:00+00:53</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://yellowelephant.xyz/tag/travel.html</loc>
 <lastmod>2018-10-11T00:00:00+00:53</lastmod>
 <changefreq>daily</changefreq>
@@ -102,7 +116,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://yellowelephant.xyz/tag/software.html</loc>
+<loc>https://yellowelephant.xyz/tag/javascript.html</loc>
 <lastmod>2018-07-16T19:30:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -116,15 +130,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://yellowelephant.xyz/tag/javascript.html</loc>
-<lastmod>2018-07-16T19:30:00+00:53</lastmod>
+<loc>https://yellowelephant.xyz/tag/linux.html</loc>
+<lastmod>2017-12-25T00:00:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://yellowelephant.xyz/tag/linux.html</loc>
-<lastmod>2017-12-25T00:00:00+00:53</lastmod>
+<loc>https://yellowelephant.xyz/tag/debug.html</loc>
+<lastmod>2016-11-19T12:20:00+00:53</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://yellowelephant.xyz/tag/software.html</loc>
+<lastmod>2018-07-16T19:30:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
