@@ -1,8 +1,8 @@
 Title: Learning to debug with Git
 Tags: git, software, debug
 Date: 2016-11-19 12:20
-HeaderImage: https://miro.medium.com/max/480/1*go7UVRBQXo1GEnCgTA9uYg.jpeg
-HeaderImageCaption: src: memegenerator
+HeaderImage: https://i.imgur.com/lCZe9cs.jpg
+HeaderImageCaption: src: pixabay.com
 author: Naveen Karippai
 Category: Software
 Summary: Debugging defects with Git
@@ -10,6 +10,12 @@ Summary: Debugging defects with Git
 ### TL;DR:
 
 Git, the stupid content tracker, provides us a couple of tools to debug the issues in our project. It could be easier to find the author of a specific line of code, or search for the changeset that introduced a bug in the project by leveraging on git tools.
+
+![memegenerator](https://miro.medium.com/max/480/1*go7UVRBQXo1GEnCgTA9uYg.jpeg)
+{.adjust-width}
+
+src: memegenerator
+{.caption}
 
 ### Bottom line:
 
