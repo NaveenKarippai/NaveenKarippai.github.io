@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/</loc>
-<lastmod>2019-12-15T19:56:53-00:00</lastmod>
+<lastmod>2019-12-25T18:22:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/archives.html</loc>
-<lastmod>2019-12-15T19:56:53-00:00</lastmod>
+<lastmod>2019-12-25T18:22:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/tags.html</loc>
-<lastmod>2019-12-15T19:56:53-00:00</lastmod>
+<lastmod>2019-12-25T18:22:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/categories.html</loc>
-<lastmod>2019-12-15T19:56:53-00:00</lastmod>
+<lastmod>2019-12-25T18:22:46-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://yellowelephant.xyz/vatican.html</loc>
+<lastmod>2018-10-11T00:00:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -47,7 +54,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/how-to-reuse-an-old-laptop.html</loc>
-<lastmod>2017-12-15T00:00:00+01:00</lastmod>
+<lastmod>2017-12-25T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -82,14 +89,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/category/travel.html</loc>
-<lastmod>2018-09-11T00:00:00+00:53</lastmod>
+<lastmod>2018-10-11T00:00:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/tag/travel.html</loc>
-<lastmod>2018-09-11T00:00:00+00:53</lastmod>
+<lastmod>2018-10-11T00:00:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -117,14 +124,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/tag/linux.html</loc>
-<lastmod>2017-12-15T00:00:00+00:53</lastmod>
+<lastmod>2017-12-25T00:00:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/author/naveen-karippai.html</loc>
-<lastmod>2018-09-11T00:00:00+00:53</lastmod>
+<lastmod>2018-10-11T00:00:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
