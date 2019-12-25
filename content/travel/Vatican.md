@@ -14,3 +14,6 @@ Category: Travel
 
 ![Vatican](https://i.imgur.com/1aZntlo.jpg)
 {.adjust-width}
+
+![Vatican](https://i.imgur.com/7dDv9qN.jpg)
+{.adjust-width}
