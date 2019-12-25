@@ -106,7 +106,7 @@ MENUITEMS = (
 
 # Author
 AUTHOR_INTRO = "YELLOW ELEPHANT &#9774; Naveen Karippai"
-AUTHOR_DESCRIPTION = "&#9775; A Software Engineer from Earth C-137 &#9775;"
+AUTHOR_DESCRIPTION = "&#9775; Software Engineer from Earth C-137 &#9775;"
 AUTHOR_AVATAR = 'https://www.gravatar.com/avatar/abcdefghijkl?s=240'
 
 # Theme customizations
