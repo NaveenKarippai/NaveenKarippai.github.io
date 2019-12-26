@@ -1,5 +1,5 @@
 Title: Learning how references work in JavaScript
-Tags: javascript, web-development, software
+Tags: javascript, software
 Date: 2016-11-13 10:20
 HeaderImage: https://i.imgur.com/KCxRUwM.jpg
 HeaderImageCaption: src: pixabay.com

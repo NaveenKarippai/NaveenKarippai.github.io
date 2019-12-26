@@ -1,5 +1,5 @@
 Title: Scoping and Hoisting in JavaScript
-Tags: javascript, web-development, software
+Tags: javascript, software
 Date: 2016-11-05 10:20
 HeaderImage: https://i.imgur.com/lCZe9cs.jpg
 HeaderImageCaption: src: pixabay.com
