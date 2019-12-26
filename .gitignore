@@ -108,3 +108,10 @@ output/
 .ssh/
 .viminfo
 .less*
+
+# editor
+.vscode/*
+*.code-workspace
+*~
+*.swp
+*.swo
