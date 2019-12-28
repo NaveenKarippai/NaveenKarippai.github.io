@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/</loc>
-<lastmod>2019-12-28T12:40:13-00:00</lastmod>
+<lastmod>2019-12-28T12:52:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/archives.html</loc>
-<lastmod>2019-12-28T12:40:13-00:00</lastmod>
+<lastmod>2019-12-28T12:52:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/tags.html</loc>
-<lastmod>2019-12-28T12:40:13-00:00</lastmod>
+<lastmod>2019-12-28T12:52:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/categories.html</loc>
-<lastmod>2019-12-28T12:40:13-00:00</lastmod>
+<lastmod>2019-12-28T12:52:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -41,6 +41,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://yellowelephant.xyz/yes-its-jordan.html</loc>
 <lastmod>2019-03-17T00:00:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://yellowelephant.xyz/frankfurt-simply-inspiring.html</loc>
+<lastmod>2019-02-14T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
