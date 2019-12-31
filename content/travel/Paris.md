@@ -1,4 +1,4 @@
-Title: Paris:
+Title: Paris
 Tags: travel
 Date: 2014-04-18
 HeaderImage: https://i.imgur.com/s4PP5p6.jpg
