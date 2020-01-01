@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/</loc>
-<lastmod>2019-12-31T18:23:48-00:00</lastmod>
+<lastmod>2020-01-01T12:29:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/archives.html</loc>
-<lastmod>2019-12-31T18:23:48-00:00</lastmod>
+<lastmod>2020-01-01T12:29:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/tags.html</loc>
-<lastmod>2019-12-31T18:23:48-00:00</lastmod>
+<lastmod>2020-01-01T12:29:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/categories.html</loc>
-<lastmod>2019-12-31T18:23:48-00:00</lastmod>
+<lastmod>2020-01-01T12:29:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -41,6 +41,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://yellowelephant.xyz/georgia-for-the-best-moments-of-your-life.html</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://yellowelephant.xyz/made-in-italy.html</loc>
+<lastmod>2019-08-17T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -88,13 +95,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://yellowelephant.xyz/how-to-reuse-an-old-laptop.html</loc>
-<lastmod>2017-12-31T00:00:00+01:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://yellowelephant.xyz/madrid-spainindetail.html</loc>
 <lastmod>2017-10-18T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -111,6 +111,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://yellowelephant.xyz/rome.html</loc>
 <lastmod>2017-10-09T00:00:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://yellowelephant.xyz/how-to-reuse-an-old-laptop.html</loc>
+<lastmod>2017-01-01T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -180,7 +187,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/tag/linux.html</loc>
-<lastmod>2017-12-31T00:00:00+00:53</lastmod>
+<lastmod>2017-01-01T00:00:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
