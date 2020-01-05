@@ -94,6 +94,6 @@ Bitcoin uses asymmetric cryptography and is supposed to be very secure. One coul
 
 
 
-#### Summary
+### Summary
 
 Bitcoin abides by the generic characteristics of Money.
