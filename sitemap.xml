@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/</loc>
-<lastmod>2020-01-05T00:14:09-00:00</lastmod>
+<lastmod>2020-01-05T10:59:09-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/archives.html</loc>
-<lastmod>2020-01-05T00:14:09-00:00</lastmod>
+<lastmod>2020-01-05T10:59:09-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/tags.html</loc>
-<lastmod>2020-01-05T00:14:09-00:00</lastmod>
+<lastmod>2020-01-05T10:59:09-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/categories.html</loc>
-<lastmod>2020-01-05T00:14:09-00:00</lastmod>
+<lastmod>2020-01-05T10:59:09-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
