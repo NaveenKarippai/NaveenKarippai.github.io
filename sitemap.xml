@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/</loc>
-<lastmod>2020-01-04T21:48:01-00:00</lastmod>
+<lastmod>2020-01-05T00:14:09-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/archives.html</loc>
-<lastmod>2020-01-04T21:48:01-00:00</lastmod>
+<lastmod>2020-01-05T00:14:09-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/tags.html</loc>
-<lastmod>2020-01-04T21:48:01-00:00</lastmod>
+<lastmod>2020-01-05T00:14:09-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/categories.html</loc>
-<lastmod>2020-01-04T21:48:01-00:00</lastmod>
+<lastmod>2020-01-05T00:14:09-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/bitcoin-money-or-not.html</loc>
-<lastmod>2020-01-04T10:20:00+01:00</lastmod>
+<lastmod>2020-01-05T00:40:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -131,7 +131,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/how-to-reuse-an-old-laptop.html</loc>
-<lastmod>2017-01-04T00:00:00+01:00</lastmod>
+<lastmod>2017-01-05T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -166,7 +166,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/category/software.html</loc>
-<lastmod>2020-01-04T10:20:00+00:53</lastmod>
+<lastmod>2020-01-05T00:40:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -201,21 +201,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/tag/blockchain.html</loc>
-<lastmod>2020-01-04T10:20:00+00:53</lastmod>
+<lastmod>2020-01-05T00:40:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/tag/bitcoin.html</loc>
-<lastmod>2020-01-04T10:20:00+00:53</lastmod>
+<lastmod>2020-01-05T00:40:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/tag/linux.html</loc>
-<lastmod>2017-01-04T00:00:00+00:53</lastmod>
+<lastmod>2017-01-05T00:00:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -236,7 +236,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/author/naveen-karippai.html</loc>
-<lastmod>2020-01-04T10:20:00+00:53</lastmod>
+<lastmod>2020-01-05T00:40:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
