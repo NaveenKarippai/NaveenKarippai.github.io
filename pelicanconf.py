@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-import os
+
 import datetime
+import os
 
 AUTHOR = "Naveen Karippai"
 SITENAME = "Yellow Elephant"
@@ -65,7 +66,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 SOCIAL = (('github', 'https://github.com/NaveenKarippai'), ('linkedin', 'https://www.linkedin.com/in/naveen-karippai/'))
 
 SHARE_BUTTONS = ('twitter', 'facebook')
- 
+
 # Plugins
 PLUGIN_PATHS = ['plugins']
 #PLUGINS = ["tag_cloud", "sitemap", "disqus_static"]
@@ -73,10 +74,10 @@ PLUGINS = ["tag_cloud", "sitemap"]
 
 # TAG_CLOUD plugin
 TAG_CLOUD = True
-TAG_CLOUD_STEPS = 6
-TAG_CLOUD_MAX_ITEMS = 40
+TAG_CLOUD_STEPS = 4
+TAG_CLOUD_MAX_ITEMS = 80
 TAG_CLOUD_BADGE = True
-TAG_CLOUD_SORTING = 'size'
+TAG_CLOUD_SORTING = 'random'
 
 # SITEMAP plugin
 SITEMAP = {
