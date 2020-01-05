@@ -10,9 +10,9 @@ Modified: 2020-01-05 00:40
 
 ### A Very Short Introduction
 
-Bitcoin is a decentralized digital currency that works without a central bank and can be sent from a user to another user without a third-party intermediary. Essentially, you own a Bank in your own pocket when you use Bitcoin. Bitcoin exists only in a digital form unlike the paper form of traditional currencies like USD, EURO. The Bitcoin network is powered by bitcoin nodes spread across the Earth and thus making it a decentralized currency. The Bitcoin transactions are immutable i.e., Bitcoin sent to a user cannot be reverted after a certain number of confirmation blocks.
+Bitcoin is a decentralized digital currency that works without a central bank and can be sent from a user to another user without a third-party intermediary. Essentially, you own a Bank in your own pocket when you use Bitcoin. Bitcoin exists only in a digital form unlike the paper form of traditional currencies like USD, EURO. The Bitcoin network is powered by bitcoin nodes spread across the Earth making it a decentralized currency. The Bitcoin transactions are immutable i.e., Bitcoin sent to a user cannot be reverted after a certain number of confirmation blocks.
 
-### The inception
+### The Inception
 
 Bitcoin was invented in 2008 by a person or a group of persons known as Satoshi Nakamoto. According to the resources, the 2008 financial crisis and the subsequent inflation was the motivation to create Bitcoin. The genesis block of BTC was mined on January 3rd, 2009. If you are interested to know further, you could read the Bitcoin whitepaper [here](https://bitcoin.org/bitcoin.pdf). The Bitcoin technology relies on cryptography and hence the term 'cryptocurrency' is also interchangeably used to represent the assets that runs on Bitcoin technology.
 
