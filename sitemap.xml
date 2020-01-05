@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/</loc>
-<lastmod>2020-01-05T11:09:28-00:00</lastmod>
+<lastmod>2020-01-05T16:07:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/archives.html</loc>
-<lastmod>2020-01-05T11:09:28-00:00</lastmod>
+<lastmod>2020-01-05T16:07:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/tags.html</loc>
-<lastmod>2020-01-05T11:09:28-00:00</lastmod>
+<lastmod>2020-01-05T16:07:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/categories.html</loc>
-<lastmod>2020-01-05T11:09:28-00:00</lastmod>
+<lastmod>2020-01-05T16:07:59-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://yellowelephant.xyz/bitcoin-learning-path.html</loc>
+<lastmod>2020-01-05T16:40:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -166,7 +173,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/category/software.html</loc>
-<lastmod>2020-01-05T00:40:00+00:53</lastmod>
+<lastmod>2020-01-05T16:40:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -201,14 +208,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/tag/blockchain.html</loc>
-<lastmod>2020-01-05T00:40:00+00:53</lastmod>
+<lastmod>2020-01-05T16:40:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/tag/bitcoin.html</loc>
-<lastmod>2020-01-05T00:40:00+00:53</lastmod>
+<lastmod>2020-01-05T16:40:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -236,7 +243,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/author/naveen-karippai.html</loc>
-<lastmod>2020-01-05T00:40:00+00:53</lastmod>
+<lastmod>2020-01-05T16:40:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
