@@ -19,7 +19,7 @@ I shall share the resources that I used to learn about Bitcoin and its technolog
 
 * Bitcoin is a digital currency. So, I decided to learn what money is  
 
-     I found the youtube series named '[The Hidden Secrets of Money](https://www.youtube.com/playlist?list=PLE88E9ICdiphYjJkeeLL2O09eJoC8r7Dc)' by Mike Maloney to be very helpful.
+    I found the youtube series named '[The Hidden Secrets of Money](https://www.youtube.com/playlist?list=PLE88E9ICdiphYjJkeeLL2O09eJoC8r7Dc)' by Mike Maloney to be very helpful.
 
 * The creation of Bitcoin was motivated by the financial crisis of 2008. Back then I did not know much about it
 
@@ -31,11 +31,11 @@ I shall share the resources that I used to learn about Bitcoin and its technolog
 
 * You are into learning from books and is interested in fundamental analysis of Bitcoin and its technology
   
-   I recommend the book named '[Cryptoassets](https://www.amazon.com/Cryptoassets-Innovative-Investors-Bitcoin-Beyond/dp/1260026671/ref=sr_1_1?keywords=cryptoassets&qid=1578238797&sr=8-1)' by Chris Burniske.  If I recall correctly, this book is not strictly covering the technical aspect of Bitcoin but skims through some of the underlying technology and various components in the Bitcoin ecosystem. I believe that having broad knowledge is always useful and hence mentioning it here.
+    I recommend the book named '[Cryptoassets](https://www.amazon.com/Cryptoassets-Innovative-Investors-Bitcoin-Beyond/dp/1260026671/ref=sr_1_1?keywords=cryptoassets&qid=1578238797&sr=8-1)' by Chris Burniske.  If I recall correctly, this book is not strictly covering the technical aspect of Bitcoin but skims through some of the underlying technology and various components in the Bitcoin ecosystem. I believe that having broad knowledge is always useful and hence mentioning it here.
 
 * Technical book on Bitcoin
    
-   [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook) by Andreas Antonopoulos is one of the best technical books I have read on Bitcoin technology.
+    [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook) by Andreas Antonopoulos is one of the best technical books I have read on Bitcoin technology.
 
 * Technical book on Ethereum or Altcoins
   
@@ -51,7 +51,7 @@ I shall share the resources that I used to learn about Bitcoin and its technolog
 
 * DIY weekend project
 
-  Try to play around with Ethereum or other Bitcoin technology. Making a smart contract on the testnet might give you further insights into how things work and help break the analysis paralysis.
+    Try to play around with Ethereum or other Bitcoin technology. Making a smart contract on the testnet might give you further insights into how things work and help break the analysis paralysis.
 
 
 ### Summary
