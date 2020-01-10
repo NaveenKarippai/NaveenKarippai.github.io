@@ -5,7 +5,7 @@ HeaderImage: https://i.imgur.com/ov0Q4sj.png
 HeaderImageCaption: src: pixabay.com
 author: Naveen Karippai
 Category: Software
-Summary: Resources I used to learn about Bitcoin and its technology
+Summary: Resources that I used to learn about Bitcoin and its technology
 Modified: 2020-01-05 16:40
 
 ### ELI5 Bitcoin
