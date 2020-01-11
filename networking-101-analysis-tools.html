@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Networking 101: Analysis Tools &ndash; Yellow Elephant</title>
+
+    <!-- Meta -->
+    <meta name="description" content="Yellow Elephant &ndash; ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social -->
+    <meta property="article:author" content="Naveen Karippai" />
+    <meta property="article:section" content="Software" />
+    <meta property="article:published_time" content="2020-01-11" />
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Networking 101: Analysis Tools"/>
+    <meta property="og:description" content="Tools used for troubleshooting computer networks"/>
+    <meta property="og:site_name" content="Yellow Elephant" />
+    <meta property="og:url" content="https://yellowelephant.xyz/networking-101-analysis-tools.html"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Networking 101: Analysis Tools">
+    <meta name="twitter:description" content="Tools used for troubleshooting computer networks">
+    <meta name="twitter:url" content="https://yellowelephant.xyz/networking-101-analysis-tools.html">
+
+    <!-- Feed -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/pygments-highlight-github.css">
+
+    <!-- Icon -->
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://yellowelephant.xyz/theme/js/jqcloud.min.js"></script>
+  </head>
+
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://yellowelephant.xyz" id="header-logo" title="Home">YE</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-blue"><a href="/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-blue"><a href="/archives.html">Archive</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+
+
+    <br><br><br>
+
+    <article>
+      <header class="w3-container col-main">
+        <h1>Networking 101: Analysis Tools</h1>
+        <div class="post-info">
+          <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+            <span><time datetime="2020-01-11T17:27:00+01:00">Sat 11 January 2020</time> in <a href="https://yellowelephant.xyz/category/software.html" title="All articles in category Software">Software</a></span>
+          </div>
+          <div>
+            <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+              <a href="https://yellowelephant.xyz/tag/networking.html" title="All articles with Networking tag">#networking</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+              <a href="https://yellowelephant.xyz/tag/debug.html" title="All articles with Debug tag">#debug</a>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <br>
+
+      <div class="headerimage-article">
+        <img src="https://i.imgur.com/NDzQYpa.jpg" style="width: 100%;">
+          <p class="caption">src: pixabay.com</p>
+      </div>
+
+      <div class="col-main w3-container">
+        <section id="content">
+          <h2>Home Network</h2>
+<p>A typical home network has many clients (laptops, desktop, tablets, mobile phones, smart things) connected to it. All of these clients connect to a Home Router either via a Wireless (WLAN) or a Wired connection depending on the availability of hardware ports on clients and the ease of usage. A modern home router has a built-in Switch and also features an integrated Modem. The basic difference between a Router and Switch is that Router filters data packets based on IP address while a Switch filters packets based on its MAC address. So, if you need to communicate with a network outside your home network, you need a Router. A modem modulates/demodulates signals depending on the carrier medium.</p>
+<p class="adjust-width"><img alt="Networking 101" src="https://i.imgur.com/0yCPMJq.png"></p>
+<p class="caption">Data packets movement from home network to the internet. created with draw.io</p>
+<p>Let's look at the high-level overview of the journey of data packets from its source to the destination. You open the Chrome web browser on your desktop and open yellowelephant.xyz website. Network Interface Card on your desktop sends the data packets to Router via WLAN. The router realizes that the IP address of destination is outside your home network by using subnet mask and destination IP address. The integrated modem in your router device sends the data as a signal to your Internet Service Provider (ISP). There is more happening before transmitting data packets to ISP such as Network Address Translation (NAT) but this is not relevant in this context. Your ISP uses the Border Gateway Protocol (BGP) to transmit data packets to a network of other routers and subsequently to the ISP of destination address. The destination ISP then forwards the packets to the destination router and server.</p>
+<p>The gist behind this micro article is to show the most commonly used tools for troubleshooting networking issues. Let's look at the tools by scenarios where it could be useful.</p>
+<h2>netstat</h2>
+<p><a href="https://en.wikipedia.org/wiki/Netstat">netstat</a> stands for Network statistics. It analyses the active Network Interface card for network connections and can also show the routing table. </p>
+<blockquote>
+<p>$ netstat</p>
+</blockquote>
+<p><em>Scenario</em>: You have started a local web server for a DIY weekend project and later the same day, you are not sure if the webserver was killed or not. You could do a netstat on your machine where you started the webserver and filter for the port number (standard port = 80). You may be thinking why not open a web browser and go to http://localhost:80 but the point is to give you an eli5 example. You can also find other ghost processes or spy network connections with netstat utility.</p>
+<h2>wireshark/tcpdump</h2>
+<p><a href="https://en.wikipedia.org/wiki/Wireshark">wireshark</a> is a packet analyzer and it allows you to analyze the payload and headers of data packets using Wireshark. The analyzed data packets can be at different levels of the OSI Networking model or TCP/IP model.</p>
+<blockquote>
+<p>$ wireshark</p>
+</blockquote>
+<p><em>Scenario</em>: Imagine you have an FTP server (unencrypted connection) at home network and you are not able to login with your FTP client. The best approach would be to analyze packets received on the FTP server. You should be able to view the headers and transmitted payload. This may help to narrow down the failure. </p>
+<p>tcmpdump is an alternative tool to Wireshark (cross-platform) and offers similar functionality in the UNIX-like world. The good thing about wireshark is that GUI does some log formatting and makes it easy to analyze logs for a human.</p>
+<h2>ping</h2>
+<p><a href="https://en.wikipedia.org/wiki/Ping_(networking_utility)">ping</a> is a network admin tool that is used to test the reachability of a host on an IP network.</p>
+<blockquote>
+<p>$ ping -c 5 www.example.com</p>
+</blockquote>
+<p>ping utility transmits ICMP packets and not TCP/UDP. </p>
+<p><em>Scenario</em>: Your web browser shows that no websites are accessible. It could be an issue with the DNS server that you have assigned to your host. To test if your network is up and connected to the outside world, run the following on your terminal</p>
+<blockquote>
+<p>$ ping 8.8.8.8</p>
+</blockquote>
+<p>8.8.8.8 is google's DNS server and if you are receiving back packets, the issue is with the DNS server you are using. I would assign an alternative fallback DNS to avoid this failure in the future.</p>
+<h2>traceroute</h2>
+<p><a href="https://en.wikipedia.org/wiki/Traceroute">traceroute</a> is a packet route analyzer. It tells you the path traveled by the packet across the internet to your destination host.</p>
+<blockquote>
+<p>$ traceroute yellowelephant.xyz</p>
+</blockquote>
+<p>The above command will tell you the route traveled by data packets to reach the website.</p>
+<p><em>Scenario</em>: Imagine the network cable between your router and ISP is exposed on the streets and there was an accident last day that resulted in the breakage of this cable. You come home and realize that you are not able to connect to the internet. You don't know where the problem is. traceroute utility could come to rescue in this situation. You can observe that packets are transmitted from your client device to the router (Gateway server) but the next-hop fails. So, you can narrow down where the point of failure is and report it to your ISP or relevant authority.</p>
+        </section>
+
+        <br><br><br>
+
+        <footer>
+          <div class="adjust-width">
+            <div id="author-block" class="w3-light-grey w3-border">
+              <div id="author-info">
+                <div style="margin-left: 20px; margin-top: 15px;">
+                  <a href=""><span id="author-name" class="w3-hover-text-dark-grey">Naveen Karippai</span></a>
+                  <p id="author-story">Software Engineer from Earth C-137</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+          <p style="font-size:10pt; font-style: italic;">Did you like this article? Share it with your friends!</p>
+          <div id="share" class="share">
+            <a href="http://www.facebook.com/sharer.php?u=https%3A//yellowelephant.xyz/networking-101-analysis-tools.html&amp;t=Yellow%20Elephant%3A%20Networking%20101%3A%20Analysis%20Tools" target="_blank" class="w3-btn w3-indigo">
+              <i class="fa fa-facebook"></i> <span>Facebook</span>
+            </a>
+            <a href="http://twitter.com/share?url=https%3A//yellowelephant.xyz/networking-101-analysis-tools.html&amp;text=Yellow%20Elephant%3A%20Networking%20101%3A%20Analysis%20Tools" target="_blank" class="w3-btn w3-blue">
+              <i class="fa fa-twitter"></i> <span>Twitter</span>
+            </a>
+          </div>
+
+          <br><br><br>
+
+
+
+        </footer>
+      </div>
+    </article>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          ©
+          2018&dash;2020          Naveen Karippai
+        </span>
+      </div>
+    </footer>
+
+
+
+  </body>
+</html>

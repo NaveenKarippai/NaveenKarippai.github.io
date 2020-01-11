@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/</loc>
-<lastmod>2020-01-10T23:41:57-00:00</lastmod>
+<lastmod>2020-01-11T19:18:07-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/archives.html</loc>
-<lastmod>2020-01-10T23:41:57-00:00</lastmod>
+<lastmod>2020-01-11T19:18:07-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/tags.html</loc>
-<lastmod>2020-01-10T23:41:57-00:00</lastmod>
+<lastmod>2020-01-11T19:18:07-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/categories.html</loc>
-<lastmod>2020-01-10T23:41:57-00:00</lastmod>
+<lastmod>2020-01-11T19:18:07-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://yellowelephant.xyz/networking-101-analysis-tools.html</loc>
+<lastmod>2020-01-11T17:27:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -152,7 +159,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/how-to-reuse-an-old-laptop.html</loc>
-<lastmod>2017-01-10T00:00:00+01:00</lastmod>
+<lastmod>2017-01-11T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -187,7 +194,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/category/software.html</loc>
-<lastmod>2020-01-10T18:20:00+00:53</lastmod>
+<lastmod>2020-01-11T17:27:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -202,6 +209,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://yellowelephant.xyz/tag/git.html</loc>
 <lastmod>2016-11-19T12:20:00+00:53</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://yellowelephant.xyz/tag/networking.html</loc>
+<lastmod>2020-01-11T17:27:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -236,14 +250,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/tag/linux.html</loc>
-<lastmod>2017-01-10T00:00:00+00:53</lastmod>
+<lastmod>2017-01-11T00:00:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://yellowelephant.xyz/tag/debug.html</loc>
-<lastmod>2016-11-19T12:20:00+00:53</lastmod>
+<lastmod>2020-01-11T17:27:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -257,7 +271,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://yellowelephant.xyz/author/naveen-karippai.html</loc>
-<lastmod>2020-01-10T18:20:00+00:53</lastmod>
+<lastmod>2020-01-11T17:27:00+00:53</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
