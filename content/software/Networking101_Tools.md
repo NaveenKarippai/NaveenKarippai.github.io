@@ -15,7 +15,7 @@ A typical home network has many clients (laptops, desktop, tablets, mobile phone
 ![Networking 101](https://i.imgur.com/0yCPMJq.png)
 {.adjust-width}
 
-Data packets movement from home network to the internet. created with draw.io
+Data packets movement from home network to the internet. Created with draw.io
 {.caption}
 
 Let's look at the high-level overview of the journey of data packets from its source to the destination. You open the Chrome web browser on your desktop and open yellowelephant.xyz website. Network Interface Card on your desktop sends the data packets to Router via WLAN. The router realizes that the IP address of destination is outside your home network by using subnet mask and destination IP address. The integrated modem in your router device sends the data as a signal to your Internet Service Provider (ISP). There is more happening before transmitting data packets to ISP such as Network Address Translation (NAT) but this is not relevant in this context. Your ISP uses the Border Gateway Protocol (BGP) to transmit data packets to a network of other routers and subsequently to the ISP of destination address. The destination ISP then forwards the packets to the destination router and server.
