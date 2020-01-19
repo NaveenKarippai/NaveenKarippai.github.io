@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Virtual Private Network (VPN) &ndash; Yellow Elephant</title>
+
+    <!-- Meta -->
+    <meta name="description" content="Yellow Elephant &ndash; ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social -->
+    <meta property="article:author" content="Naveen Karippai" />
+    <meta property="article:section" content="Software" />
+    <meta property="article:published_time" content="2020-01-19" />
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Virtual Private Network (VPN)"/>
+    <meta property="og:description" content="What is a Virtual Private Network (VPN)?"/>
+    <meta property="og:site_name" content="Yellow Elephant" />
+    <meta property="og:url" content="https://yellowelephant.xyz/virtual-private-network-vpn.html"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Virtual Private Network (VPN)">
+    <meta name="twitter:description" content="What is a Virtual Private Network (VPN)?">
+    <meta name="twitter:url" content="https://yellowelephant.xyz/virtual-private-network-vpn.html">
+
+    <!-- Feed -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://yellowelephant.xyz/theme/css/pygments-highlight-github.css">
+
+    <!-- Icon -->
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://yellowelephant.xyz/theme/js/jqcloud.min.js"></script>
+  </head>
+
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://yellowelephant.xyz" id="header-logo" title="Home">YE</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-blue"><a href="/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-blue"><a href="/archives.html">Archive</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+
+
+    <br><br><br>
+
+    <article>
+      <header class="w3-container col-main">
+        <h1>Virtual Private Network (VPN)</h1>
+        <div class="post-info">
+          <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+            <span><time datetime="2020-01-19T13:47:00+01:00">Sun 19 January 2020</time> in <a href="https://yellowelephant.xyz/category/software.html" title="All articles in category Software">Software</a></span>
+          </div>
+          <div>
+            <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+              <a href="https://yellowelephant.xyz/tag/networking.html" title="All articles with Networking tag">#networking</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+              <a href="https://yellowelephant.xyz/tag/vpn.html" title="All articles with Vpn tag">#VPN</a>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <br>
+
+      <div class="headerimage-article">
+        <img src="https://i.imgur.com/26WYkG5.jpg" style="width: 100%;">
+          <p class="caption">src: pixabay.com</p>
+      </div>
+
+      <div class="col-main w3-container">
+        <section id="content">
+          <h3>ELI5 Virtual Private Network (VPN)</h3>
+<p>A Virtual Private Network (VPN) extends a private network across a public network and enables users to send and receive data across a public network as if their devices are connected to the private network.</p>
+<p>Let's try to understand this with a simple example. You live in California and have a Netflix subscription. Netflix offers different content to its users depending on the geographical location due to distribution rights in respective countries. So, you are on a business trip to Amsterdam and would like to watch the latest season of your favorite TV series on Netflix. You logon on to Netflix and discover that due to a different location, you do not have access to your favorite TV series from Amsterdam, bummer! A VPN will save you in this situation. With a VPN connection, you could connect to your local network in California and via VPN tunnel connect to Netflix and get access to your favorite TV series. So, from Netflix's point of view, you appear to be located in California while you are in Amsterdam.</p>
+<p class="adjust-width"><img alt="VPN Client-to-Site" src="https://i.imgur.com/3pFD7Uf.png"></p>
+<p class="caption">VPN Client-to-Site. Created with draw.io</p>
+<p>You need to have a VPN Server or Concentrator running on the local network you are trying to connect. To make a VPN tunnel, you need to use a VPN Client. As far as I know, you cannot randomly choose a VPN client but select the one that matches your VPN Server. The reason behind is different VPN types, Authentication protocols, etc used on VPN. A VPN tunnel is needed not to be encrypted inherently.</p>
+<h3>VPN Server</h3>
+<p>If you are running a Linux-based firmware like <a href="https://wiki.dd-wrt.com/wiki/index.php/Main_Page">dd-wrt</a> or open-wrt on your access point or wireless router, you could install a VPN Server on your Router. There are also many third-party VPN services on the internet. The choice depends on your use case. </p>
+<h3>VPN data packets</h3>
+<p class="adjust-width"><img alt="VPN data packets" src="https://i.imgur.com/DYkOi6s.png"></p>
+<p class="caption">VPN data packets. Created with draw.io</p>
+<p>The VPN Client encapsulates the data packets with a new set of VPN frames (last two frames on the right side of the packet). Back to the above example with Netflix, the source private IP address on the data packet is the private IP address of your local network in Amsterdam. Source public IP address on the data packet is the public address from NAT (Network Address Translation) Router in Amsterdam. The destination public IP address points to the Home Router (VPN server). The process of encapsulating the data packets is known as tunneling. The VPN tunnel does not have to be encrypted inherently. The source public address on the data packet is used to receive data from the VPN server.</p>
+        </section>
+
+        <br><br><br>
+
+        <footer>
+          <div class="adjust-width">
+            <div id="author-block" class="w3-light-grey w3-border">
+              <div id="author-info">
+                <div style="margin-left: 20px; margin-top: 15px;">
+                  <a href=""><span id="author-name" class="w3-hover-text-dark-grey">Naveen Karippai</span></a>
+                  <p id="author-story">Software Engineer from Earth C-137</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+          <p style="font-size:10pt; font-style: italic;">Did you like this article? Share it with your friends!</p>
+          <div id="share" class="share">
+            <a href="http://www.facebook.com/sharer.php?u=https%3A//yellowelephant.xyz/virtual-private-network-vpn.html&amp;t=Yellow%20Elephant%3A%20Virtual%20Private%20Network%20%28VPN%29" target="_blank" class="w3-btn w3-indigo">
+              <i class="fa fa-facebook"></i> <span>Facebook</span>
+            </a>
+            <a href="http://twitter.com/share?url=https%3A//yellowelephant.xyz/virtual-private-network-vpn.html&amp;text=Yellow%20Elephant%3A%20Virtual%20Private%20Network%20%28VPN%29" target="_blank" class="w3-btn w3-blue">
+              <i class="fa fa-twitter"></i> <span>Twitter</span>
+            </a>
+          </div>
+
+          <br><br><br>
+
+
+
+        </footer>
+      </div>
+    </article>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          ©
+          2018&dash;2020          Naveen Karippai
+        </span>
+      </div>
+    </footer>
+
+
+
+  </body>
+</html>
