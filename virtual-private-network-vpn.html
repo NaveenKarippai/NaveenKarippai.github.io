@@ -96,9 +96,10 @@
 <h3>VPN Server</h3>
 <p>If you are running a Linux-based firmware like <a href="https://wiki.dd-wrt.com/wiki/index.php/Main_Page">dd-wrt</a> or open-wrt on your access point or wireless router, you could install a VPN Server on your Router. There are also many third-party VPN services on the internet. The choice depends on your use case. </p>
 <h3>VPN data packets</h3>
+<p>The VPN Client encapsulates the data packets with a new set of VPN frames (last two frames on the right side of the packet). </p>
 <p class="adjust-width"><img alt="VPN data packets" src="https://i.imgur.com/DYkOi6s.png"></p>
 <p class="caption">VPN data packets. Created with draw.io</p>
-<p>The VPN Client encapsulates the data packets with a new set of VPN frames (last two frames on the right side of the packet). Back to the above example with Netflix, the source private IP address on the data packet is the private IP address of your local network in Amsterdam. Source public IP address on the data packet is the public address from NAT (Network Address Translation) Router in Amsterdam. The destination public IP address points to the Home Router (VPN server). The process of encapsulating the data packets with VPN frames is known as tunneling. The VPN tunnel does not have to be encrypted inherently. The source public address on the data packet is used to receive data back from the VPN server.</p>
+<p>Back to the above example with Netflix, the source private IP address on the data packet is the private IP address of your local network in Amsterdam. Source public IP address on the data packet is the public address from NAT (Network Address Translation) Router in Amsterdam. The destination public IP address points to the Home Router (VPN server). The process of encapsulating the data packets with VPN frames is known as tunneling. The VPN tunnel does not have to be encrypted inherently. The source public address on the data packet is used to receive data back from the VPN server.</p>
         </section>
 
         <br><br><br>
