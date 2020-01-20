@@ -29,10 +29,12 @@ If you are running a Linux-based firmware like [dd-wrt](https://wiki.dd-wrt.com/
 
 ### VPN data packets
 
+The VPN Client encapsulates the data packets with a new set of VPN frames (last two frames on the right side of the packet). 
+
 ![VPN data packets](https://i.imgur.com/DYkOi6s.png)
 {.adjust-width}
 
 VPN data packets. Created with draw.io
 {.caption}
 
-The VPN Client encapsulates the data packets with a new set of VPN frames (last two frames on the right side of the packet). Back to the above example with Netflix, the source private IP address on the data packet is the private IP address of your local network in Amsterdam. Source public IP address on the data packet is the public address from NAT (Network Address Translation) Router in Amsterdam. The destination public IP address points to the Home Router (VPN server). The process of encapsulating the data packets with VPN frames is known as tunneling. The VPN tunnel does not have to be encrypted inherently. The source public address on the data packet is used to receive data back from the VPN server.
+Back to the above example with Netflix, the source private IP address on the data packet is the private IP address of your local network in Amsterdam. Source public IP address on the data packet is the public address from NAT (Network Address Translation) Router in Amsterdam. The destination public IP address points to the Home Router (VPN server). The process of encapsulating the data packets with VPN frames is known as tunneling. The VPN tunnel does not have to be encrypted inherently. The source public address on the data packet is used to receive data back from the VPN server.
